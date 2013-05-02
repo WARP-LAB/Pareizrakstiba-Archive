@@ -1,6 +1,14 @@
 #ifndef __CSUTILHXX__
 #define __CSUTILHXX__
 
+// change for pareizrakstiba
+// Unicode character encoding information
+struct unicode_info {
+    unsigned short c;
+    unsigned short cupper;
+    unsigned short clower;
+};
+
 #include "hunvisapi.h"
 
 // First some base level utility routines
