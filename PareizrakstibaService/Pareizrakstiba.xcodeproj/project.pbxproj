@@ -7,11 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F50DB0B51732F32B00709B17 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0B41732F32B00709B17 /* main.mm */; };
+		F50DB0B91732F3A500709B17 /* PareizrakstibaSpellServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0B81732F3A500709B17 /* PareizrakstibaSpellServer.mm */; };
+		F50DB0BD1732F54100709B17 /* PareizrakstibaDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0BC1732F54100709B17 /* PareizrakstibaDelegate.mm */; };
+		F50DB0C11732F92800709B17 /* PareizrakstibaSpellChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0C01732F92800709B17 /* PareizrakstibaSpellChecker.mm */; };
+		F50DB0C31732F98800709B17 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50DB0C21732F98800709B17 /* CoreFoundation.framework */; };
+		F50DB0C51732FCBD00709B17 /* Pareizrakstiba.icns in Resources */ = {isa = PBXBuildFile; fileRef = F50DB0C41732FCBD00709B17 /* Pareizrakstiba.icns */; };
 		F5F4E9561732F0C900D514E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F4E9551732F0C900D514E8 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F5F4E9521732F0C900D514E8 /* Pareizrakstiba.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pareizrakstiba.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50DB0B41732F32B00709B17 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		F50DB0B71732F3A500709B17 /* PareizrakstibaSpellServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PareizrakstibaSpellServer.h; path = SpellServer/PareizrakstibaSpellServer.h; sourceTree = "<group>"; };
+		F50DB0B81732F3A500709B17 /* PareizrakstibaSpellServer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PareizrakstibaSpellServer.mm; path = SpellServer/PareizrakstibaSpellServer.mm; sourceTree = "<group>"; };
+		F50DB0BB1732F54100709B17 /* PareizrakstibaDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PareizrakstibaDelegate.h; path = SpellDelegate/PareizrakstibaDelegate.h; sourceTree = "<group>"; };
+		F50DB0BC1732F54100709B17 /* PareizrakstibaDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PareizrakstibaDelegate.mm; path = SpellDelegate/PareizrakstibaDelegate.mm; sourceTree = "<group>"; };
+		F50DB0BF1732F92800709B17 /* PareizrakstibaSpellChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PareizrakstibaSpellChecker.h; path = SpellChecker/PareizrakstibaSpellChecker.h; sourceTree = "<group>"; };
+		F50DB0C01732F92800709B17 /* PareizrakstibaSpellChecker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PareizrakstibaSpellChecker.mm; path = SpellChecker/PareizrakstibaSpellChecker.mm; sourceTree = "<group>"; };
+		F50DB0C21732F98800709B17 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F50DB0C41732FCBD00709B17 /* Pareizrakstiba.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Pareizrakstiba.icns; sourceTree = "<group>"; };
+		F5F4E9521732F0C900D514E8 /* Pareizrakstiba.service */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pareizrakstiba.service; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F4E9551732F0C900D514E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F5F4E9581732F0C900D514E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		F5F4E9591732F0C900D514E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -25,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50DB0C31732F98800709B17 /* CoreFoundation.framework in Frameworks */,
 				F5F4E9561732F0C900D514E8 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +48,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F50DB0B61732F37800709B17 /* SpellServer */ = {
+			isa = PBXGroup;
+			children = (
+				F50DB0B71732F3A500709B17 /* PareizrakstibaSpellServer.h */,
+				F50DB0B81732F3A500709B17 /* PareizrakstibaSpellServer.mm */,
+			);
+			name = SpellServer;
+			sourceTree = "<group>";
+		};
+		F50DB0BA1732F51400709B17 /* SpellDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F50DB0BB1732F54100709B17 /* PareizrakstibaDelegate.h */,
+				F50DB0BC1732F54100709B17 /* PareizrakstibaDelegate.mm */,
+			);
+			name = SpellDelegate;
+			sourceTree = "<group>";
+		};
+		F50DB0BE1732F8CE00709B17 /* SpellChecker */ = {
+			isa = PBXGroup;
+			children = (
+				F50DB0BF1732F92800709B17 /* PareizrakstibaSpellChecker.h */,
+				F50DB0C01732F92800709B17 /* PareizrakstibaSpellChecker.mm */,
+			);
+			name = SpellChecker;
+			sourceTree = "<group>";
+		};
 		F5F4E9471732F0C800D514E8 = {
 			isa = PBXGroup;
 			children = (
@@ -44,7 +87,7 @@
 		F5F4E9531732F0C900D514E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F5F4E9521732F0C900D514E8 /* Pareizrakstiba.bundle */,
+				F5F4E9521732F0C900D514E8 /* Pareizrakstiba.service */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +95,7 @@
 		F5F4E9541732F0C900D514E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F50DB0C21732F98800709B17 /* CoreFoundation.framework */,
 				F5F4E9551732F0C900D514E8 /* Cocoa.framework */,
 				F5F4E9571732F0C900D514E8 /* Other Frameworks */,
 			);
@@ -71,6 +115,10 @@
 		F5F4E95B1732F0C900D514E8 /* Pareizrakstiba */ = {
 			isa = PBXGroup;
 			children = (
+				F50DB0B41732F32B00709B17 /* main.mm */,
+				F50DB0BE1732F8CE00709B17 /* SpellChecker */,
+				F50DB0BA1732F51400709B17 /* SpellDelegate */,
+				F50DB0B61732F37800709B17 /* SpellServer */,
 				F5F4E95C1732F0C900D514E8 /* Supporting Files */,
 			);
 			path = Pareizrakstiba;
@@ -79,6 +127,7 @@
 		F5F4E95C1732F0C900D514E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F50DB0C41732FCBD00709B17 /* Pareizrakstiba.icns */,
 				F5F4E95D1732F0C900D514E8 /* Pareizrakstiba-Info.plist */,
 				F5F4E9611732F0C900D514E8 /* Pareizrakstiba-Prefix.pch */,
 			);
@@ -102,7 +151,7 @@
 			);
 			name = Pareizrakstiba;
 			productName = Pareizrakstiba;
-			productReference = F5F4E9521732F0C900D514E8 /* Pareizrakstiba.bundle */;
+			productReference = F5F4E9521732F0C900D514E8 /* Pareizrakstiba.service */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -136,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50DB0C51732FCBD00709B17 /* Pareizrakstiba.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +196,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50DB0B51732F32B00709B17 /* main.mm in Sources */,
+				F50DB0B91732F3A500709B17 /* PareizrakstibaSpellServer.mm in Sources */,
+				F50DB0BD1732F54100709B17 /* PareizrakstibaDelegate.mm in Sources */,
+				F50DB0C11732F92800709B17 /* PareizrakstibaSpellChecker.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,13 +209,14 @@
 		F5F4E9621732F0C900D514E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -171,35 +226,42 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Debug;
 		};
 		F5F4E9631732F0C900D514E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Release;
 		};
@@ -212,7 +274,6 @@
 				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -225,7 +286,6 @@
 				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
