@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F5F4E9561732F0C900D514E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F4E9551732F0C900D514E8 /* Cocoa.framework */; };
-		F5F4E9601732F0C900D514E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5F4E95E1732F0C900D514E8 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +17,6 @@
 		F5F4E9591732F0C900D514E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F5F4E95A1732F0C900D514E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5F4E95D1732F0C900D514E8 /* Pareizrakstiba-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pareizrakstiba-Info.plist"; sourceTree = "<group>"; };
-		F5F4E95F1732F0C900D514E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5F4E9611732F0C900D514E8 /* Pareizrakstiba-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pareizrakstiba-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				F5F4E95D1732F0C900D514E8 /* Pareizrakstiba-Info.plist */,
-				F5F4E95E1732F0C900D514E8 /* InfoPlist.strings */,
 				F5F4E9611732F0C900D514E8 /* Pareizrakstiba-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -139,7 +136,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5F4E9601732F0C900D514E8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,17 +150,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F5F4E95E1732F0C900D514E8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5F4E95F1732F0C900D514E8 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F5F4E9621732F0C900D514E8 /* Debug */ = {
@@ -263,6 +248,7 @@
 				F5F4E9661732F0C900D514E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
