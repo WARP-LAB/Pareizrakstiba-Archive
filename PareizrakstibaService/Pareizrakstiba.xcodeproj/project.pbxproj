@@ -14,6 +14,21 @@
 		F50DB0C31732F98800709B17 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50DB0C21732F98800709B17 /* CoreFoundation.framework */; };
 		F50DB0C51732FCBD00709B17 /* Pareizrakstiba.icns in Resources */ = {isa = PBXBuildFile; fileRef = F50DB0C41732FCBD00709B17 /* Pareizrakstiba.icns */; };
 		F50DB0C81733002A00709B17 /* lv_LV in Resources */ = {isa = PBXBuildFile; fileRef = F50DB0C71733002A00709B17 /* lv_LV */; };
+		F50DB1091733071C00709B17 /* affentry.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0D61733071C00709B17 /* affentry.cxx */; };
+		F50DB10A1733071C00709B17 /* affixmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0D81733071C00709B17 /* affixmgr.cxx */; };
+		F50DB10B1733071C00709B17 /* csutil.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0DD1733071C00709B17 /* csutil.cxx */; };
+		F50DB10C1733071C00709B17 /* dictmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0DF1733071C00709B17 /* dictmgr.cxx */; };
+		F50DB10D1733071C00709B17 /* filemgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0E11733071C00709B17 /* filemgr.cxx */; };
+		F50DB10E1733071C00709B17 /* hashmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0E31733071C00709B17 /* hashmgr.cxx */; };
+		F50DB10F1733071C00709B17 /* hunspell.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0E61733071C00709B17 /* hunspell.cxx */; };
+		F50DB1121733071C00709B17 /* hunzip.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0EC1733071C00709B17 /* hunzip.cxx */; };
+		F50DB1131733071C00709B17 /* license.hunspell in Resources */ = {isa = PBXBuildFile; fileRef = F50DB0EF1733071C00709B17 /* license.hunspell */; };
+		F50DB1141733071C00709B17 /* license.myspell in Resources */ = {isa = PBXBuildFile; fileRef = F50DB0F01733071C00709B17 /* license.myspell */; };
+		F50DB1191733071C00709B17 /* phonet.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0F51733071C00709B17 /* phonet.cxx */; };
+		F50DB11A1733071C00709B17 /* README in Resources */ = {isa = PBXBuildFile; fileRef = F50DB0F71733071C00709B17 /* README */; };
+		F50DB11B1733071C00709B17 /* replist.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0F81733071C00709B17 /* replist.cxx */; };
+		F50DB11C1733071C00709B17 /* suggestmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0FA1733071C00709B17 /* suggestmgr.cxx */; };
+		F50DB11D1733071C00709B17 /* utf_info.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0FC1733071C00709B17 /* utf_info.cxx */; };
 		F5F4E9561732F0C900D514E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F4E9551732F0C900D514E8 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +43,40 @@
 		F50DB0C21732F98800709B17 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		F50DB0C41732FCBD00709B17 /* Pareizrakstiba.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Pareizrakstiba.icns; sourceTree = "<group>"; };
 		F50DB0C71733002A00709B17 /* lv_LV */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lv_LV; path = ../../Dictionaries/lv_LV; sourceTree = "<group>"; };
+		F50DB0D61733071C00709B17 /* affentry.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = affentry.cxx; sourceTree = "<group>"; };
+		F50DB0D71733071C00709B17 /* affentry.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = affentry.hxx; sourceTree = "<group>"; };
+		F50DB0D81733071C00709B17 /* affixmgr.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = affixmgr.cxx; sourceTree = "<group>"; };
+		F50DB0D91733071C00709B17 /* affixmgr.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = affixmgr.hxx; sourceTree = "<group>"; };
+		F50DB0DA1733071C00709B17 /* atypes.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = atypes.hxx; sourceTree = "<group>"; };
+		F50DB0DB1733071C00709B17 /* baseaffix.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = baseaffix.hxx; sourceTree = "<group>"; };
+		F50DB0DC1733071C00709B17 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		F50DB0DD1733071C00709B17 /* csutil.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = csutil.cxx; sourceTree = "<group>"; };
+		F50DB0DE1733071C00709B17 /* csutil.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = csutil.hxx; sourceTree = "<group>"; };
+		F50DB0DF1733071C00709B17 /* dictmgr.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dictmgr.cxx; sourceTree = "<group>"; };
+		F50DB0E01733071C00709B17 /* dictmgr.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dictmgr.hxx; sourceTree = "<group>"; };
+		F50DB0E11733071C00709B17 /* filemgr.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filemgr.cxx; sourceTree = "<group>"; };
+		F50DB0E21733071C00709B17 /* filemgr.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = filemgr.hxx; sourceTree = "<group>"; };
+		F50DB0E31733071C00709B17 /* hashmgr.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hashmgr.cxx; sourceTree = "<group>"; };
+		F50DB0E41733071C00709B17 /* hashmgr.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hashmgr.hxx; sourceTree = "<group>"; };
+		F50DB0E51733071C00709B17 /* htypes.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = htypes.hxx; sourceTree = "<group>"; };
+		F50DB0E61733071C00709B17 /* hunspell.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hunspell.cxx; sourceTree = "<group>"; };
+		F50DB0E81733071C00709B17 /* hunspell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hunspell.h; sourceTree = "<group>"; };
+		F50DB0E91733071C00709B17 /* hunspell.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hunspell.hxx; sourceTree = "<group>"; };
+		F50DB0EA1733071C00709B17 /* hunvisapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hunvisapi.h; sourceTree = "<group>"; };
+		F50DB0EC1733071C00709B17 /* hunzip.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hunzip.cxx; sourceTree = "<group>"; };
+		F50DB0ED1733071C00709B17 /* hunzip.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hunzip.hxx; sourceTree = "<group>"; };
+		F50DB0EE1733071C00709B17 /* langnum.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = langnum.hxx; sourceTree = "<group>"; };
+		F50DB0EF1733071C00709B17 /* license.hunspell */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.hunspell; sourceTree = "<group>"; };
+		F50DB0F01733071C00709B17 /* license.myspell */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.myspell; sourceTree = "<group>"; };
+		F50DB0F51733071C00709B17 /* phonet.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = phonet.cxx; sourceTree = "<group>"; };
+		F50DB0F61733071C00709B17 /* phonet.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = phonet.hxx; sourceTree = "<group>"; };
+		F50DB0F71733071C00709B17 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		F50DB0F81733071C00709B17 /* replist.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = replist.cxx; sourceTree = "<group>"; };
+		F50DB0F91733071C00709B17 /* replist.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = replist.hxx; sourceTree = "<group>"; };
+		F50DB0FA1733071C00709B17 /* suggestmgr.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = suggestmgr.cxx; sourceTree = "<group>"; };
+		F50DB0FB1733071C00709B17 /* suggestmgr.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = suggestmgr.hxx; sourceTree = "<group>"; };
+		F50DB0FC1733071C00709B17 /* utf_info.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utf_info.cxx; sourceTree = "<group>"; };
+		F50DB0FD1733071C00709B17 /* w_char.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = w_char.hxx; sourceTree = "<group>"; };
 		F5F4E9521732F0C900D514E8 /* Pareizrakstiba.service */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pareizrakstiba.service; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F4E9551732F0C900D514E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F5F4E9581732F0C900D514E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -77,6 +126,48 @@
 			name = SpellChecker;
 			sourceTree = "<group>";
 		};
+		F50DB0C91733071C00709B17 /* hunspell */ = {
+			isa = PBXGroup;
+			children = (
+				F50DB0D61733071C00709B17 /* affentry.cxx */,
+				F50DB0D71733071C00709B17 /* affentry.hxx */,
+				F50DB0D81733071C00709B17 /* affixmgr.cxx */,
+				F50DB0D91733071C00709B17 /* affixmgr.hxx */,
+				F50DB0DA1733071C00709B17 /* atypes.hxx */,
+				F50DB0DB1733071C00709B17 /* baseaffix.hxx */,
+				F50DB0DC1733071C00709B17 /* config.h */,
+				F50DB0DD1733071C00709B17 /* csutil.cxx */,
+				F50DB0DE1733071C00709B17 /* csutil.hxx */,
+				F50DB0DF1733071C00709B17 /* dictmgr.cxx */,
+				F50DB0E01733071C00709B17 /* dictmgr.hxx */,
+				F50DB0E11733071C00709B17 /* filemgr.cxx */,
+				F50DB0E21733071C00709B17 /* filemgr.hxx */,
+				F50DB0E31733071C00709B17 /* hashmgr.cxx */,
+				F50DB0E41733071C00709B17 /* hashmgr.hxx */,
+				F50DB0E51733071C00709B17 /* htypes.hxx */,
+				F50DB0E61733071C00709B17 /* hunspell.cxx */,
+				F50DB0E81733071C00709B17 /* hunspell.h */,
+				F50DB0E91733071C00709B17 /* hunspell.hxx */,
+				F50DB0EA1733071C00709B17 /* hunvisapi.h */,
+				F50DB0EC1733071C00709B17 /* hunzip.cxx */,
+				F50DB0ED1733071C00709B17 /* hunzip.hxx */,
+				F50DB0EE1733071C00709B17 /* langnum.hxx */,
+				F50DB0EF1733071C00709B17 /* license.hunspell */,
+				F50DB0F01733071C00709B17 /* license.myspell */,
+				F50DB0F51733071C00709B17 /* phonet.cxx */,
+				F50DB0F61733071C00709B17 /* phonet.hxx */,
+				F50DB0F71733071C00709B17 /* README */,
+				F50DB0F81733071C00709B17 /* replist.cxx */,
+				F50DB0F91733071C00709B17 /* replist.hxx */,
+				F50DB0FA1733071C00709B17 /* suggestmgr.cxx */,
+				F50DB0FB1733071C00709B17 /* suggestmgr.hxx */,
+				F50DB0FC1733071C00709B17 /* utf_info.cxx */,
+				F50DB0FD1733071C00709B17 /* w_char.hxx */,
+			);
+			name = hunspell;
+			path = "../../hunspell-1.3.2/src/hunspell";
+			sourceTree = "<group>";
+		};
 		F5F4E9471732F0C800D514E8 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +208,7 @@
 		F5F4E95B1732F0C900D514E8 /* Pareizrakstiba */ = {
 			isa = PBXGroup;
 			children = (
+				F50DB0C91733071C00709B17 /* hunspell */,
 				F50DB0B41732F32B00709B17 /* main.mm */,
 				F50DB0BE1732F8CE00709B17 /* SpellChecker */,
 				F50DB0BA1732F51400709B17 /* SpellDelegate */,
@@ -190,6 +282,9 @@
 			files = (
 				F50DB0C51732FCBD00709B17 /* Pareizrakstiba.icns in Resources */,
 				F50DB0C81733002A00709B17 /* lv_LV in Resources */,
+				F50DB1131733071C00709B17 /* license.hunspell in Resources */,
+				F50DB1141733071C00709B17 /* license.myspell in Resources */,
+				F50DB11A1733071C00709B17 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +299,18 @@
 				F50DB0B91732F3A500709B17 /* PareizrakstibaSpellServer.mm in Sources */,
 				F50DB0BD1732F54100709B17 /* PareizrakstibaDelegate.mm in Sources */,
 				F50DB0C11732F92800709B17 /* PareizrakstibaSpellChecker.mm in Sources */,
+				F50DB1091733071C00709B17 /* affentry.cxx in Sources */,
+				F50DB10A1733071C00709B17 /* affixmgr.cxx in Sources */,
+				F50DB10B1733071C00709B17 /* csutil.cxx in Sources */,
+				F50DB10C1733071C00709B17 /* dictmgr.cxx in Sources */,
+				F50DB10D1733071C00709B17 /* filemgr.cxx in Sources */,
+				F50DB10E1733071C00709B17 /* hashmgr.cxx in Sources */,
+				F50DB10F1733071C00709B17 /* hunspell.cxx in Sources */,
+				F50DB1121733071C00709B17 /* hunzip.cxx in Sources */,
+				F50DB1191733071C00709B17 /* phonet.cxx in Sources */,
+				F50DB11B1733071C00709B17 /* replist.cxx in Sources */,
+				F50DB11C1733071C00709B17 /* suggestmgr.cxx in Sources */,
+				F50DB11D1733071C00709B17 /* utf_info.cxx in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
