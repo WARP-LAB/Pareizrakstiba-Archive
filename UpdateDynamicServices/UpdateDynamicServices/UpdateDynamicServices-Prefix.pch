@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'UpdateDynamicServices' target in the 'UpdateDynamicServices' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

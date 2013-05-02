@@ -1,0 +1,246 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F50DB13917330E5A00709B17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50DB13817330E5A00709B17 /* Foundation.framework */; };
+		F50DB13C17330E5A00709B17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F50DB13B17330E5A00709B17 /* main.m */; };
+		F50DB15117330F3B00709B17 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50DB15017330F3B00709B17 /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F50DB13217330E5A00709B17 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F50DB13417330E5A00709B17 /* UpdateDynamicServices */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UpdateDynamicServices; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50DB13817330E5A00709B17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F50DB13B17330E5A00709B17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F50DB13E17330E5A00709B17 /* UpdateDynamicServices-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UpdateDynamicServices-Prefix.pch"; sourceTree = "<group>"; };
+		F50DB15017330F3B00709B17 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F50DB13117330E5A00709B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50DB15117330F3B00709B17 /* AppKit.framework in Frameworks */,
+				F50DB13917330E5A00709B17 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F50DB12917330E5A00709B17 = {
+			isa = PBXGroup;
+			children = (
+				F50DB13A17330E5A00709B17 /* UpdateDynamicServices */,
+				F50DB13717330E5A00709B17 /* Frameworks */,
+				F50DB13517330E5A00709B17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F50DB13517330E5A00709B17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F50DB13417330E5A00709B17 /* UpdateDynamicServices */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F50DB13717330E5A00709B17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F50DB15017330F3B00709B17 /* AppKit.framework */,
+				F50DB13817330E5A00709B17 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F50DB13A17330E5A00709B17 /* UpdateDynamicServices */ = {
+			isa = PBXGroup;
+			children = (
+				F50DB13B17330E5A00709B17 /* main.m */,
+				F50DB13D17330E5A00709B17 /* Supporting Files */,
+			);
+			path = UpdateDynamicServices;
+			sourceTree = "<group>";
+		};
+		F50DB13D17330E5A00709B17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F50DB13E17330E5A00709B17 /* UpdateDynamicServices-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F50DB13317330E5A00709B17 /* UpdateDynamicServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50DB14317330E5A00709B17 /* Build configuration list for PBXNativeTarget "UpdateDynamicServices" */;
+			buildPhases = (
+				F50DB13017330E5A00709B17 /* Sources */,
+				F50DB13117330E5A00709B17 /* Frameworks */,
+				F50DB13217330E5A00709B17 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UpdateDynamicServices;
+			productName = UpdateDynamicServices;
+			productReference = F50DB13417330E5A00709B17 /* UpdateDynamicServices */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F50DB12B17330E5A00709B17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = kroko;
+			};
+			buildConfigurationList = F50DB12E17330E5A00709B17 /* Build configuration list for PBXProject "UpdateDynamicServices" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F50DB12917330E5A00709B17;
+			productRefGroup = F50DB13517330E5A00709B17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F50DB13317330E5A00709B17 /* UpdateDynamicServices */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F50DB13017330E5A00709B17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50DB13C17330E5A00709B17 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F50DB14117330E5A00709B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = ./build;
+			};
+			name = Debug;
+		};
+		F50DB14217330E5A00709B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				SYMROOT = ./build;
+			};
+			name = Release;
+		};
+		F50DB14417330E5A00709B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UpdateDynamicServices/UpdateDynamicServices-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F50DB14517330E5A00709B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UpdateDynamicServices/UpdateDynamicServices-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F50DB12E17330E5A00709B17 /* Build configuration list for PBXProject "UpdateDynamicServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50DB14117330E5A00709B17 /* Debug */,
+				F50DB14217330E5A00709B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50DB14317330E5A00709B17 /* Build configuration list for PBXNativeTarget "UpdateDynamicServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50DB14417330E5A00709B17 /* Debug */,
+				F50DB14517330E5A00709B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F50DB12B17330E5A00709B17 /* Project object */;
+}
