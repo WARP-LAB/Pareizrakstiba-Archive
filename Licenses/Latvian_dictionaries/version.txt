@@ -1,0 +1,14 @@
+# Latvieðu valodas affix fails lietoðanai ar OpenOffice, LibreOffice u.c.
+# Latvian affix table for OpenOffice, LibreOffice etc
+#
+# Copyright (C) 2002-2013 Janis Eisaks, jancs@dv.lv
+#
+
+=================
+Version info 0.9.6
+Svarîgs paziòojums: 
+ðî ir vispçdçjâkâ vârdnîcas versija, kas ir 100% MySpell savietojama. 
+Ar nâkoðo laidienu (v.1.0.0) tiks uzsâkta HunSpell funkcionalitâtes ievieðana.
+
+Izmaiòas ðajâ versijâ:
+- koriìçts .dic fails

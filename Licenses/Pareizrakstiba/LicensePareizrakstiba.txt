@@ -1,0 +1,54 @@
+/*
+ * Pareizrakstība - Latviešu valodas pareizrakstības pārbaude
+ * Pareizrakstiba - Latvian spellcheck
+ * Copyright (C) 2008-2013 kroko / Reinis Adovics
+ * http://www.kroko.me code[AT]kroko.me
+ * Licenesed as
+ * GPL - GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+ * http://www.gnu.org/licenses/gpl.html
+ *
+ * Using:
+ * 1)
+ * Latviešu valodas affix fails lietošanai ar OpenOffice, LibreOffice u.c.
+ * Latvian affix table for OpenOffice, LibreOffice etc
+ * Copyright (C) 2002-2013 Janis Eisaks, jancs@dv.lv
+ * Licenesd as
+ * LGPL- GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
+ * 
+ * 2)
+ * Hunspell
+ * Licenesd as
+ * LGPL- GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999 or later
+ * or GPL- GNU GENERAL PUBLIC LICENSE Version 2 or later
+ * or MPL- MOZILLA PUBLIC LICENSE Version 1.1
+ *
+ * The Initial Developers of the Original Code are
+ * Kevin Hendricks (MySpell) and Laszlo Nemeth (Hunspell).
+ * Portions created by the Initial Developers are Copyright (C) 2002-2005
+ * the Initial Developers. All Rights Reserved.
+ *
+ * Contributor(s):
+ * David Einstein 
+ * Davide Prina
+ * Giuseppe Modugno 
+ * Gianluca Turconi
+ * Simon Brouwer
+ * Noll Janos
+ * Biro Arpad
+ * Goldman Eleonora
+ * Sarlos Tamas
+ * Bencsath Boldizsar
+ * Halacsy Peter
+ * Dvornik Laszlo
+ * Gefferth Andras
+ * Nagy Viktor
+ * Varga Daniel
+ * Chris Halls
+ * Rene Engelhard
+ * Bram Moolenaar
+ * Dafydd Jones
+ * Harri Pitkanen
+ * Andras Timar
+ * Tor Lillqvist
+ *
+ */
