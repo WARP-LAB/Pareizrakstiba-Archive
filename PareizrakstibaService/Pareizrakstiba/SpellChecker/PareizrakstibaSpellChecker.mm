@@ -14,8 +14,8 @@
 {
     self = [super init] ;
 	if (self != nil) {
-		myHS = new Hunspell ([[ [ NSBundle bundleForClass:[self class] ] pathForResource:@"lv_LV_utf8" ofType:@"aff" inDirectory:@"lv"] UTF8String],
-							 [[ [ NSBundle bundleForClass:[self class] ] pathForResource:@"lv_LV_utf8" ofType:@"dic" inDirectory:@"lv"] UTF8String]);
+		myHS = new Hunspell ([[ [ NSBundle bundleForClass:[self class] ] pathForResource:@"lv_LV_utf8" ofType:@"aff" inDirectory:@"lv_LV"] UTF8String],
+							 [[ [ NSBundle bundleForClass:[self class] ] pathForResource:@"lv_LV_utf8" ofType:@"dic" inDirectory:@"lv_LV"] UTF8String]);
 	}
     return self;
 }
