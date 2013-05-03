@@ -39,7 +39,8 @@ typedef unsigned int NSUInteger;
 class	Hunspell;
 
 @interface PareizrakstibaSpellChecker : NSObject {
-	Hunspell*						myHS;
+	Hunspell* myHS;
+    NSMutableCharacterSet *wordCharSet;
 }
 - (id)init;
 - (void) dealloc;

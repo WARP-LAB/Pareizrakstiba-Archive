@@ -24,9 +24,9 @@
 #import "PareizrakstibaSpellChecker.h"
 
 /*
- // As I had an idea of introducing some basic grammar checking, made this a forwarding class.
- // Seperate class for spelling, rather than putting code right here into instance methods.
- // So grammar could be easily "modally" added later.
+ As I had the idea of introducing some basic grammar checking, made this a forwarding class.
+ Seperate class for spelling, rather than putting code right here into instance methods.
+ So grammar could be easily "modally" added later.
  */
 
 @class	PareizrakstibaSpellChecker; // Spelling checker class
