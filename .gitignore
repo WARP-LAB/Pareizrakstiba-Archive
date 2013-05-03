@@ -8,6 +8,11 @@
 # Thumbnails
 ._*
 
+#archives
+*.zip
+*.tar.gz
+*.tar
+
 #pkg
 *.pkg
 
