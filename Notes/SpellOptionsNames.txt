@@ -1,0 +1,152 @@
+
+http://mac.tunt.lv/zoom-disc.php?mainid=80975&tabula=discus
+http://termini.letonika.lv/Term.aspx?tabindex=1
+
+CUSTOM:
+
+Spelling options:
+Ignore uppercased words
+Ignore words containing numbers
+Ignore words with mixed case
+Ignore internet and e-mail addresses
+
+Pareizrakstības papildiespējas:
+Ignorēt vārdus, kas rakstīti tikai ar lielajiem burtiem
+Ignorēt vārdus, kas satur ciparus
+Ignorēt vārdus, kas satur gan lielos, gan mazos burtus
+Ignorēt tīmekļa un e-pasta adreses
+
+
+OVERRIDES:
+
+Check spelling
+Check grammar
+CORRECT SPELLING AUTOMATICALLY
+
+Pārbaudīt pareizrakstību
+Pārbaudīt sintaksi
+Labot pareizrakstību automātiski
+
+DATA DETECTORS
+Smart links
+
+Adrešu, datuma un laika atrašana
+Tīmekļa saišu atrašana
+
+Smart quotes
+Smart dashes
+Text replacements
+
+
+INNER:
+Language identification
+
+//////////////////////////////////////////////////////////////////////////
+
+Case:
+ignoreUppercaseWords
+we don't check UPPERCASE words (take them as correct)
+UPPERCASEWORD - TRUE
+
+ignoreWordsWithNumbers
+we don't check words with numbers (take them as correct)
+w0rdwithNumber - TRUE
+
+ignoreMixedCase
+we don't check words with mixed case
+WoRd - TRUE
+woRd - TRUE
+Word - FALSE
+
+ignoreWebAdd;
+
+
+	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	 %%%%%%%%%%%%%%  EMAIL %%%%%%%%%%%%%%
+	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	 
+	 Consists of 3 parts:
+	 I LOCAL PART
+	 II SEPERATOR
+	 III DOMAIN NAME
+	 
+	 /////////////////////////////
+	 I LOCAL-PART
+	 /////////////////////////////
+	 
+	 Standards:
+	 RFC 2822
+	 section 3.4.1
+	 http://tools.ietf.org/html/rfc2822#section-3.4.1
+	 section 3.2.4
+	 http://tools.ietf.org/html/rfc2822#3.2.4
+	
+	 RFC 3696
+	 section 3.
+	 http://tools.ietf.org/html/rfc3696#section-3
+	 The valid local part examples for mail addresses are nuts!
+	 
+	 Anyway a valid local-part follows rules:
+	 1) Any combination of alphabetic characters [A-Za-z]
+	 2) Any combination of digits [0-9]
+	 3)
+		3.1) Any ASCII graphic (printing) character 
+			! # $ % & ' * + - / = ?  ^ _ ` . { | } ~
+			other than 
+			@ \ " , [ ]
+		3.2) but the latter can also be used if quoted, i.e. "Abc@def"@example.com
+	 4) Period . but may not be used to start or end the
+		local part, nor may two or more consecutive periods appear.
+
+	 NOTE:
+	 Code will check local-part for everything else than 3.2 rule
+
+	 /////////////////////////////
+	 II SEPERATOR BETWEEN LOCAL-PART AND DOMAIN NAME
+	 /////////////////////////////
+	 
+	 1) @	 
+
+	 /////////////////////////////	 
+	 III DOMAIN NAME
+	 /////////////////////////////
+	
+	
+	
+	 RFC 1034
+	 http://tools.ietf.org/html/rfc1034
+	
+	 HOST:
+	   
+	 1) Any combination of alphabetic characters [a-z]
+	 2) Any combination of digits [0-9]
+	 3) Start with letter
+	 4) End with letter or digit
+	 5) Hyphen - , but cannot be at the beginning nor at the end of name
+	 6) Not shorter than 2 chars
+	 7) Not longer than 63 chars?
+	 
+	 TOP LEVEL DOMAIN:
+	 1) Starts with .
+	 2) Length is various
+		• top-level domain
+		• generic top-level domain (pain!)
+		• two-character territory code based ISO-3166 http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+
+	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	 %%%%%%%%%%%%%%   URI  %%%%%%%%%%%%%%
+	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	 
+	 See EMAIL: III DOMAIN NAME
+
+	 RFC 1808
+	 RFC 1738
+	 RFC 2396
+	 RFC 2732
+
+
+
+
+CODE EXAMPLES:
+
+http://www.oreillynet.com/pub/a/network/excerpt/spcookbook_chap03/index3.html

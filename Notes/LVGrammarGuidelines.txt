@@ -1,0 +1,65 @@
+//
+// kroko
+//
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ATKĀRTOJUMI
+
+//////////////////////////////////
+Pieturzīmju atkārtojumi
+Implementējami
+..
+,,
+::
+
+
+Iznēmumi
+...
+
+//////////////////////////////////
+Burtu atkārtojumi
+Nav nepieciešams implementēt. Par to atbild pareizrakstība.
+
+//////////////////////////////////
+Vārdu atkārtojumi
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+BARBARISMS
+
+Smailiņi:
+:)
+:(
+:-)
+:-(
+:=)
+:=(
+:D
+:=D
+:-D
+:P
+:-P
+:=P
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+BIEŽAS KĻŪDAS
+
+dēļ manis
+dēļ tevis
+dēļ viņa
+dēļ viņas
+dēļ tā
+dēļ mūsu
+dēļ jūsu
+dēļ viņu
+
+
+gan, gan (atkārtots komats)
+, bet - komats
+
+
+
+

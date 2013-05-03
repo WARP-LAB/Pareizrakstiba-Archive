@@ -1,0 +1,113 @@
+	
+	/*
+	 sender
+	 Spell server making the analysis request.
+	 
+	 stringToCheck
+	 String to analyze.
+	 
+	 offset
+	 The offset in the string.
+	 
+	 checkingTypes
+	 The text checking types to perform.
+	 
+	 options
+	 A dictionary defining the actions to be taken while checking this string. See Constants in NSSpellChecker for the possible keys.
+	 
+	 orthography
+	 The identified orthography of stringToCheck. See NSOrthography for more information.
+	 
+	 wordCount
+	 On output, returns by-reference the number of words from the beginning of the string object until the misspelled word (or the end of string).
+	 
+	 NSTextCheckingTypes
+	 Defines the types of checking that are available. The system supports its own internal types, and the user can extend those types by subclassing NSTextCheckingResult and adding their own custom types.
+	 
+	 enum {
+	 NSTextCheckingAllSystemTypes    = 0xffffffffULL,
+	 NSTextCheckingAllCustomTypes    = 0xffffffffULL << 32,
+	 purposes
+	 NSTextCheckingAllTypes          = (NSTextCheckingAllSystemTypes | NSTextCheckingAllCustomTypes)
+	 };
+	 typedef uint64_t NSTextCheckingTypes;
+	 Constants
+	 NSTextCheckingAllSystemTypes
+	 Checking types supported by the system. The first 32 types are reserved.
+	 
+	 Available in Mac OS X v10.6 and later.
+	 
+	 Declared in NSTextCheckingResult.h.
+	 
+	 NSTextCheckingAllCustomTypes
+	 Checking types that can be used by clients.
+	 
+	 Available in Mac OS X v10.6 and later.
+	 
+	 Declared in NSTextCheckingResult.h.
+	 
+	 NSTextCheckingAllTypes
+	 All possible checking types, both system and user supported.
+	 
+	 Available in Mac OS X v10.6 and later.
+	 
+	 Declared in NSTextCheckingResult.h.
+	 
+	 
+	 //////////
+	 Spell Checking Option Dictionary Keys
+	 The constants are optional keys that can be used in the options dictionary parameter of the checkString:range:types:options:inSpellDocumentWithTag:orthography:wordCount:, requestCheckingOfString:range:types:options:inSpellDocumentWithTag:completionHandler:, and menuForResult:string:options:atLocation:inView: methods.
+	 
+	 NSString *NSTextCheckingOrthographyKey;
+	 NSString *NSTextCheckingQuotesKey;
+	 NSString *NSTextCheckingReplacementsKey;
+	 NSString *NSTextCheckingReferenceDateKey;
+	 NSString *NSTextCheckingReferenceTimeZoneKey;
+	 NSString *NSTextCheckingDocumentURLKey;
+	 NSString *NSTextCheckingDocumentTitleKey;
+	 NSString *NSTextCheckingDocumentAuthorKey;
+	 
+	 NSTextCheckingType
+	 These constants specify the type of checking the methods should do. They are returned by resultType.
+	 
+	 enum {
+	 NSTextCheckingTypeOrthography   = 1ULL << 0,
+	 NSTextCheckingTypeSpelling      = 1ULL << 1,
+	 NSTextCheckingTypeGrammar       = 1ULL << 2,
+	 NSTextCheckingTypeDate          = 1ULL << 3,
+	 NSTextCheckingTypeAddress       = 1ULL << 4,
+	 NSTextCheckingTypeLink          = 1ULL << 5,
+	 NSTextCheckingTypeQuote         = 1ULL << 6,
+	 NSTextCheckingTypeDash          = 1ULL << 7,
+	 NSTextCheckingTypeReplacement   = 1ULL << 8,
+	 NSTextCheckingTypeCorrection    = 1ULL << 9
+	 };
+	 typedef uint64_t NSTextCheckingType;
+	 //////////////
+	 
+	 NSTextCheckingResult is a class used to describe items located by text checking.  Each of these objects represents something that has been found during checking--a misspelled word, a sentence with grammatical issues, a detected URL, a straight quote to be replaced with curly quotes, and so forth.
+	 
+	 enum {
+	 NSTextCheckingTypeOrthography   = 1ULL << 0,            // language identification 
+	 NSTextCheckingTypeSpelling      = 1ULL << 1,            // spell checking  SPELLING AND GRAMMAR / CHECK SPELLING WHILE TYPING (CHECK DOCUMENT NOW)
+	 NSTextCheckingTypeGrammar       = 1ULL << 2,            // grammar checking SPELLING AND GRAMMAR /CHECK SPELLING WITH GRAMMAR
+	 NSTextCheckingTypeDate          = 1ULL << 3,            // date/time detection SUBSTITUTIONS/ DATA DETECTORS
+	 NSTextCheckingTypeAddress       = 1ULL << 4,            // address detection SUBSTITUTIONS/ DATA DETECTORS
+	 NSTextCheckingTypeLink          = 1ULL << 5,            // link detection SUBSTITUTIONS/ SMART LINKS
+	 NSTextCheckingTypeQuote         = 1ULL << 6,            // smart quotes SUBSTITUTIONS/ SART QUOTES
+	 NSTextCheckingTypeDash          = 1ULL << 7,            // smart dashes SUBSTITUTIONS/ SMART DASHES
+	 NSTextCheckingTypeReplacement   = 1ULL << 8,            // fixed replacements, such as copyright symbol for (c) SUBSTITUTIONS /TEXT REPLACEMENTS
+	 NSTextCheckingTypeCorrection    = 1ULL << 9             // autocorrection SPELLING AND GRAMMAR / CORRECT SPELLING AUTOMATICALLY
+	 };
+	 typedef uint64_t NSTextCheckingType;    // a single type
+	 
+	 enum {
+	 NSTextCheckingAllSystemTypes    = 0xffffffffULL,        // the first 32 types are reserved
+	 NSTextCheckingAllCustomTypes    = 0xffffffffULL << 32,  // clients may use the remainder for their own purposes
+	 NSTextCheckingAllTypes          = (NSTextCheckingAllSystemTypes | NSTextCheckingAllCustomTypes)
+	 };
+	 typedef uint64_t NSTextCheckingTypes;   // a combination of types
+	 */
+	 
+	 
+	 '

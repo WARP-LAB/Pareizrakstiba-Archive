@@ -1,0 +1,139 @@
+Autocorrect for some common mistakes
+
+Sources
+http://www.liis.lv/latval/orto/default.htm
+http://www.liis.lv/latval/orto/dvp.htm
+http://www.liis.lv/latval/orto/apsvp.htm
+http://www.liis.lv/latval/orto/partvp.htm
+http://www.liis.lv/latval/orto/apsvp.htm
+
+http://www.liis.lv/latval/morfol/index.htm
+http://www.liis.lv/latval/morfol/apst.htm
+
+http://www.liis.lv/latval/surdo/index.htm
+http://www.liis.lv/latval/surdo/apstakl.htm
+
+http://www.liis.lv/latval/sintakse/index6.htm
+
+http://www.liis.lv/latval/fonetika/index8.htm
+
+http://www.liis.lv/latval/interpunkc/inter1.htm
+
+http://www.liis.lv/latval/teksts/teksts1.htm
+http://www.liis.lv/latval/teksts/rozenb1.htm
+
+http://www.vvk.lv/index.php?sadala=14&id=235
+
+http://www.vvk.lv/print.php?id=473
+http://www.lu.lv/filol/valoda/2_sak.htm
+http://www.likumi.lv/doc.php?id=14740
+http://lv.wikipedia.org/wiki/Partikulu_rakstīšana_šķirti_vai_kopā
+
+
+If word is reported as incorrect, try to autocorrect it, checking it against hunspell
+
+BuiltinCommonCharRepetition
+Wrong -> Right
+@@ -> @
+
+BuiltinCommonDiacriticMisspell
+Diacritical signs in 1337
+Wrong -> Right
+aa -> ā
+ch -> č
+cj -> č
+ee -> ē
+gj -> ģ
+ii -> ī
+kj -> ķ
+lj -> ļ
+nj -> ņ
+sh -> š
+sj -> š
+uu -> ū
+zh -> ž
+zj -> ž
+
+UserCommonMisspelledWordsCustom
+mobīlais -> mobilais
+
+UserCommonMisspelledWordsParticles (Partikulas)
+kautkad -> kaut kad
+kautkur -> kaut kur
+kautkas -> kaut kas
+kautgan -> kaut gan
+diezkas -> diez kas
+diezkāds -> diez kāds
+diezinkā -> diezin kā
+nezcik -> nez cik
+nezkad -> nez kad
+nezinkur -> nezin kur
+nezinkad -> nezin kad
+itkā -> it kā
+
+UserCommonMisspelledWordsAdverbs (Apstākļa vādi)
+tiko -> tikko
+pretīm -> pretim
+kapēc -> kāpēc
+tulīt -> tūlīt
+tapēc -> tāpēc
+
+
+CustomCommonMisspelledWordPart
+*@1* -> *@2*
+
+eē -> ee
+piem. neēsmu - > neesmu
+
+as -> ās
+piem. mācas -> mācās
+
+am -> ām
+piem. cerējam -> cerējām
+
+ās -> as
+piem. atšķirās -> atšķiras
+
+ām -> am
+
+it -> īt
+piem. dariju -> darīju
+
+aj -> āj
+piem. domaju -> domāju
+
+ej -> ēj
+piem. vaideju -> vaidēju
+
+ij -> īj
+piem. pētiju -> pētīju
+
+ut -> ūt
+piem. dabuju -> dabūju
+
+ities -> īties
+ 
+inat -> ināt
+
+inaties -> ināties
+
+sdams -> zdams
+piem: mesdams -> mezdams
+
+zdams -> sdams
+
+Tools possible:
+NSPredicate
+RegexKit http://regexkit.sourceforge.net/
+RegexKitLite http://regexkit.sourceforge.net/RegexKitLite/index.html
+POSIX regex
+AGRegex http://colloquy.info/project/browser/trunk/Frameworks/AGRegex
+CocoaOniguruma http://limechat.net/cocoaoniguruma/
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+ 
+ CASE STUDY
+ Spelling options available in programms across platforms
+
+ /////////////////////////////////////////////////
+ 
+ Mac OSX
+ 
+ Spelling:
+ Check document now
+ Check spelling while typing
+ 
+ Grammar:
+ Check grammar with spelling
+
+ /////////////////////////////////////////////////
+ 
+ OpenOffice.org 3
+ 
+ Speling:
+ Check spelling as you type
+ Check uppercase words
+ Check words with numbers
+ Check capitalization
+ Check special regions
+ Check in all languages
+ Do not mark erros
+ Check in all languages
+ German spelling - old
+ Hyphenation settings
+ 
+ /////////////////////////////////////////////////
+ 
+ Microsoft Word 2000
+ 
+ Spelling:
+ Check spelling as you type
+ Hide spelling errors in this document
+ Always suggest corrections
+ Suggest from main dictionary only
+ Ignore words in UPPERCASE
+ Ignore words with numbers
+ Ignore internet and file addresses
+ 
+ Grammar:
+ Check graamar as you type
+ Hide grammatical errors in this document
+ Check grammar with spelling
+ Show readability statistics
+ 
+ /////////////////////////////////////////////////
+ 
+ Microsoft Word 2003
+ 
+ Spelling:
+ Check spelling as you type
+ Hide spelling errors in this document
+ Always suggest corrections
+ Suggest from main dictionary only
+ Ignore words in UPPERCASE
+ Ignore words with numbers
+ Ignore internet and file addresses
+ 
+ Grammar:
+ Check graamar as you type
+ Hide grammatical errors in this document
+ Check grammar with spelling
+ Show readability statistics 
+
+ /////////////////////////////////////////////////
+ 
+ AbiWord
+ 
+ http://www.flexbeta.net/images/abiword/spell_options.gif
+ http://www.softpedia.com/screenshots/Portable-AbiWord_6.png
+ http://www.abisource.com/information/news/2003/preferences-spelling-030603.png
+ 
+ Spelling:
+ Check spelling as you type
+ Don't highlit mispelled words
+ Ignore words in UPPERCASE
+ Ignore words with numbers
+ Ignore internet and file addresses
+ Always suggest corrections
+ Suggest from main dictionary only
+ 
+ /////////////////////////////////////////////////
+
+ PRINTINGPRESS EXTREME
+ 
+ http://invitationarchitect.com/tour.PX.spelling.html
+ 
+ Spelling:
+ Ignore capitalized words
+ Ignore all-caps words
+ Ignore words with numbers
+ Ignore words with mixed case
+ Ignore domain names
+ Report doubled words
+ Case sensitive
+ Phonetic suggestions
+ Typographical suggestions
+ Suggest split words
+ Auto correct
+
+ /////////////////////////////////////////////////
+ 
+ Spell Magic
+ 
+ http://www.softpedia.com/progScreenshots/Spell-Magic-Screenshot-6538.html
+ 
+ Spelling:
+ Check spelling as you type 
+ Correct spelling errors as you type
+ Ignore words in UPPERCASE
+ Ignore words containing numbers
+ Ignore markup languages
+ Ignore Internet addresses
+ Ignore quoted lines
+ Ignore abbreviations
+ Suggest from main dictionaries only
+ Promt on repeated word
+ 
+ Auto-Correct pairs
+ 
+ /////////////////////////////////////////////////
+
+
+
