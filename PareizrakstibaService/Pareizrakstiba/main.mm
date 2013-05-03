@@ -6,7 +6,7 @@
 int main()
 {
 	NSAutoreleasePool *autoreleasepool= [[NSAutoreleasePool alloc] init];
-	NSLog(@"Pareizrakstiba 3.1 (%d) (c) kroko\n",MAC_OS_X_VERSION_MIN_REQUIRED);
+	NSLog(@"Pareizrakstiba 3.1 (c) 2008-2013 kroko\n");
 	// New spell server instance (used with higher versions, as spell server is the place to put our notification center in)
 	PareizrakstibaSpellServer *pareizrakstibaSpellServer = [[PareizrakstibaSpellServer alloc] init];
 	if ([pareizrakstibaSpellServer registerLanguage:@"lv" byVendor:@"Apple"])

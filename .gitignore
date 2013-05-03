@@ -8,6 +8,9 @@
 # Thumbnails
 ._*
 
+#pkg
+*.pkg
+
 # XCode
 *.pbxuser
 *.perspective

@@ -4,6 +4,8 @@ sudo mkdir -p /Library/Services/
 sudo chown -R root:wheel /Library/Services/
 sudo chmod -R 755 /Library/Services/
 sudo rm -rf /Library/Services/Pareizrakstiba.service
+# flush it
+/System/Library/CoreServices/pbs -flush
 sudo rm -rf /Library/Application\ Support/Pareizrakstiba
 sudo rm -rf /Library/Receipts/pareizrakstiba.pkg
 sudo rm -rf /Library/Receipts/Uzstādīt\ Pareizrakstību.pkg
