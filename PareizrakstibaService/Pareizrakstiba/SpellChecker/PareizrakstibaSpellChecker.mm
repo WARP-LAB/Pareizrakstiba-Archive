@@ -45,9 +45,8 @@ struct EncodingMapping {
          Although haven't tested, it seems expensive for me.
          */
         
-        // There was a bug I discovered, don't remeber what it was
 #if MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_4
-        wordCharSet = [[[NSCharacterSet alphanumericCharacterSet] mutableCopy] autorelease];
+        wordCharSet = [[[NSCharacterSet alphanumericCharacterSet] mutableCopy] autorelease]; // for 10.4 // There was a bug I discovered back then, don't remeber what it was
 #else
         wordCharSet = [NSMutableCharacterSet alphanumericCharacterSet];
 #endif
@@ -111,7 +110,7 @@ struct EncodingMapping {
 		if (*wordCount) *wordCount = wordCountUntill; // pass number of words till misspelled word
 	}
 #if MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_4
-	return NSMakeRange (NSNotFound, 0); // if our scanner failed to return range, then simply return {0x7fffffff,0} range
+	return NSMakeRange (NSNotFound, 0); // for 10.4 // if our scanner failed to return range, then simply return {0x7fffffff,0} range
 #else
 	// In OS 10.5 and up NSNotFound is defined as NSIntegerMax (prior it was 0x7fffffff). So basically need for this arises whether user's running 32 or 64 bit environment.
 	// Thus- compiling Pareizrakstība as 64-bit, will give NSNotFound==LONG_MAX, however apps utilising OSX spell server CAN expect
@@ -125,7 +124,6 @@ struct EncodingMapping {
 #endif
 #endif  // MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_4
 }
-
 
 // Suggest guesses for the correct spelling of the given misspelled word
 - (NSArray *)spellServer:(NSSpellServer *)sender suggestGuessesForWord:(NSString *)word inLanguage:(NSString *)language
@@ -212,8 +210,6 @@ struct EncodingMapping {
      
      When user chooses to "Ignore Spelling" no word is added to user dictionary, the word is kept in "memory" and
      only while document containing the word is loaded.
-     
-     NSLog(@"User learned word \"%@\" in language %@.\n", word, language);
      
      I see no need to use Hunspell method of adding word to the run-time dictionary, as it is managed in OS level and won't be passed here anyways
      myHS->add([word UTF8String]);

@@ -22,9 +22,9 @@
 #import <Foundation/Foundation.h>
 #import <Foundation/NSSpellServer.h>
 #import <CoreFoundation/CoreFoundation.h>
-#import "hunspell.hxx" // import Hunspell
+#import "hunspell.hxx"
 
-#if MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_4
+#if MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_4 // for 10.4
 // NSInteger/NSUInteger and Max/Mins (for 10.4 we care only about 32-bit arch here)
 #ifndef NSINTEGER_DEFINED
 typedef int NSInteger;
