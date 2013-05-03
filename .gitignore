@@ -15,6 +15,7 @@
 
 #pkg
 *.pkg
+Deploy/
 
 # XCode
 *.pbxuser
