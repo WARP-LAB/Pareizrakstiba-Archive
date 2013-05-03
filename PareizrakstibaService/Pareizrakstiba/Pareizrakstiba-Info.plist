@@ -22,25 +22,25 @@
 	<string>krko</string>
 	<key>CFBundleVersion</key>
 	<string>3.1</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2008-2013 kroko. All rights reserved.</string>
 	<key>LSBackgroundOnly</key>
 	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2008-2013 kroko</string>
 	<key>NSPrincipalClass</key>
 	<string>PareizrakstibaDelegate</string>
 	<key>NSServices</key>
 	<array>
 		<dict>
-			<key>NSSpellChecker</key>
-			<string>Apple</string>
+			<key>NSExecutable</key>
+			<string>Pareizrakstiba</string>
 			<key>NSLanguages</key>
 			<array>
 				<string>lv</string>
 			</array>
-			<key>NSExecutable</key>
-			<string>Pareizrakstiba</string>
 			<key>NSPortName</key>
 			<string>Pareizrakstiba</string>
+			<key>NSSpellChecker</key>
+			<string>Apple</string>
 		</dict>
 	</array>
 </dict>

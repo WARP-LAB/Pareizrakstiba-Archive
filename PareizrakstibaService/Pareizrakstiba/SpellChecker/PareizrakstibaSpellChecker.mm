@@ -1,12 +1,30 @@
-//
-//  PareizrakstibaSpellChecker.m
-//  Pareizrakstiba
-//
-//  Created by Reinis Adovičs on 02.05.13.
-//  Copyright (c) 2013. g. kroko. All rights reserved.
-//
+/*
+ PareizrakstibaSpellChecker.mm
+ 
+ Pareizrakstība - Latviešu valodas pareizrakstības pārbaude
+ Pareizrakstiba - Latvian spellcheck
+ Copyright (C) 2008-2013 kroko / Reinis Adovics
+ 
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
 #import "PareizrakstibaSpellChecker.h"
+
+struct EncodingMapping {
+	const char* name;
+	CFStringEncoding encoding;
+};
 
 @implementation PareizrakstibaSpellChecker
 
@@ -144,8 +162,8 @@
 
 - (void)spellServer:(NSSpellServer *)sender recordResponse:(NSUInteger)response toCorrection:(NSString *)correction forWord:(NSString *)word language:(NSString *)language {
     /*
-     When the user accepts, rejects, or edits an autocorrection, the view notifies the NSSpellChecker class of what happened 
-     in the client application, and NSSpellChecker then invokes this method, so that it can record that and modify future autocorrection 
+     When the user accepts, rejects, or edits an autocorrection, the view notifies the NSSpellChecker class of what happened
+     in the client application, and NSSpellChecker then invokes this method, so that it can record that and modify future autocorrection
      behavior based on what it has learned from the user's actions.
      
      /dev/null this one
@@ -157,17 +175,17 @@
 - (void)spellServer:(NSSpellServer *)sender didLearnWord:(NSString *)word inLanguage:(NSString *)language
 {
     /*
-	When user chooses to "Learn Spelling" for a word OSX automatically adds it to user dictionary, located at ~/Library/Spelling/<langid>
-	It works and word isn't spelled any more.
-	Thus we need no code here
-	
-	When user chooses to "Ignore Spelling" no word is added to user dictionary, the word is kept in "memory" and
-	only while document (NSTextField) containing the word is loaded.
-	
-	NSLog(@"User learned word \"%@\" in language %@.\n", word, language);
-	
-	Note: I see no need to use Hunspell method of adding word to the run-time dictionary.
-	myHS->add([word UTF8String]);
+     When user chooses to "Learn Spelling" for a word OSX automatically adds it to user dictionary, located at ~/Library/Spelling/<langid>
+     It works and word isn't spelled any more.
+     Thus we need no code here
+     
+     When user chooses to "Ignore Spelling" no word is added to user dictionary, the word is kept in "memory" and
+     only while document (NSTextField) containing the word is loaded.
+     
+     NSLog(@"User learned word \"%@\" in language %@.\n", word, language);
+     
+     Note: I see no need to use Hunspell method of adding word to the run-time dictionary.
+     myHS->add([word UTF8String]);
      */
 }
 
@@ -175,28 +193,110 @@
 - (void)spellServer:(NSSpellServer *)sender didForgetWord:(NSString *)word inLanguage:(NSString *)language
 {
     /*
-	When user chooses to "Unlearn Spelling" for a word OSX does it, using the same user dictionary, located at ~/Library/Spelling/<languageid>
-	The way it's done, is adding the word one more time to the dic.
-	It works and word isn't spelled any more.
-	
-	However, as user dictionary at ~/Library/Spelling/<languageid> will be used to contribute/submit new words to HunSpell aff&dic developer,
-	there's a problem to solve. In the situation described above user would contribute word list with an incorrect word repeated twice, instead of not sending it at all!
-	We have to change this OSX behavior, and on "Unlearn Spelling" actually delete the word from user dic.
-	
-	This methods description is incorrect - it's not "didForgetWord", burt "WILL!ForgetWord".
-    "Notifies the delegate that the sender has removed the specified word from the user’s list of acceptable words in the specified language."
-	but should be read as
-	"Notifies the delegate that the sender IS GOING TO REMOVE the specified word from the user’s list of acceptable words in the specified language."
-	Thus I cannot delete a word, that hasn't been written to user's dic yet.
-	
-	That means that on contribute process the code will have to check for any duplicate words (which accordingly are unlearned (incorrect) words).
-	
-	NSLog(@"User unlearned word \"%@\" in language %@.\n", word, language);
-	
-	Note: I see no need to use Hunspell method of removing word from the run-time dictionary.
-	myHS->remove([word UTF8String]);
+     When user chooses to "Unlearn Spelling" for a word OSX does it, using the same user dictionary, located at ~/Library/Spelling/<languageid>
+     The way it's done, is adding the word one more time to the dic.
+     It works and word isn't spelled any more.
+     
+     However, as user dictionary at ~/Library/Spelling/<languageid> will be used to contribute/submit new words to HunSpell aff&dic developer,
+     there's a problem to solve. In the situation described above user would contribute word list with an incorrect word repeated twice, instead of not sending it at all!
+     We have to change this OSX behavior, and on "Unlearn Spelling" actually delete the word from user dic.
+     
+     This methods description is incorrect - it's not "didForgetWord", burt "WILL!ForgetWord".
+     "Notifies the delegate that the sender has removed the specified word from the user’s list of acceptable words in the specified language."
+     but should be read as
+     "Notifies the delegate that the sender IS GOING TO REMOVE the specified word from the user’s list of acceptable words in the specified language."
+     Thus I cannot delete a word, that hasn't been written to user's dic yet.
+     
+     That means that on contribute process the code will have to check for any duplicate words (which accordingly are unlearned (incorrect) words).
+     
+     NSLog(@"User unlearned word \"%@\" in language %@.\n", word, language);
+     
+     Note: I see no need to use Hunspell method of removing word from the run-time dictionary.
+     myHS->remove([word UTF8String]);
      */
 }
+
+
+- (NSStringEncoding) hunspellDictEncodingToNSEncoding:(const char*)encoding
+{
+	EncodingMapping mappings[] = {
+        {"UTF-8",kCFStringEncodingUTF8}, // Arabic, Az, Turkish
+        {"ISO8859-1",kCFStringEncodingISOLatin1}, // Catalan, Danish, German, English, Spanish, Basque, gl, Italian, la, Dutch, Portuguese, Swedish
+        {"ISO8859-2",kCFStringEncodingISOLatin2}, // Czech, Croatian, Polish
+        {"ISO8859-3",kCFStringEncodingISOLatin3},
+        {"ISO8859-4",kCFStringEncodingISOLatin4},
+        {"ISO8859-5",kCFStringEncodingISOLatinCyrillic},
+        {"ISO8859-6",kCFStringEncodingISOLatinArabic},
+        {"ISO8859-7",kCFStringEncodingISOLatinGreek},
+        {"ISO8859-8",kCFStringEncodingISOLatinHebrew},
+        {"ISO8859-9",kCFStringEncodingISOLatin5},
+        {"ISO8859-10",kCFStringEncodingISOLatin6},
+        {"ISO8859-11",kCFStringEncodingISOLatinThai},
+        {"ISO8859-13",kCFStringEncodingISOLatin7}, // Greek, Latvian
+        {"ISO8859-14",kCFStringEncodingISOLatin8},
+        {"ISO8859-15",kCFStringEncodingISOLatin9}, // French
+        {"ISO8859-16",kCFStringEncodingISOLatin10},
+        {"RFC2319",kCFStringEncodingKOI8_U},
+        {"KOI8-U",kCFStringEncodingKOI8_U}, // Ukrainian
+        {"KOI8-R",kCFStringEncodingKOI8_R},						// Russian
+        {"microsoft-cp1251",kCFStringEncodingWindowsCyrillic},
+        {"ISCII-DEVANAGARI",kCFStringEncodingMacDevanagari},
+        {"microsoft-cp437",kCFStringEncodingDOSLatinUS},
+        {"microsoft-cp437",kCFStringEncodingDOSGreek},
+        {"microsoft-cp775",kCFStringEncodingDOSBalticRim},
+        {"microsoft-cp850",kCFStringEncodingDOSLatin1},
+        {"microsoft-cp851",kCFStringEncodingDOSGreek1},
+        {"microsoft-cp852",kCFStringEncodingDOSLatin2},
+        {"microsoft-cp855",kCFStringEncodingDOSCyrillic},
+        {"microsoft-cp857",kCFStringEncodingDOSTurkish},
+        {"microsoft-cp860",kCFStringEncodingDOSPortuguese},
+        {"microsoft-cp861",kCFStringEncodingDOSIcelandic},
+        {"microsoft-cp862",kCFStringEncodingDOSHebrew},
+        {"microsoft-cp863",kCFStringEncodingDOSCanadianFrench},
+        {"microsoft-cp864",kCFStringEncodingDOSArabic},
+        {"microsoft-cp865",kCFStringEncodingDOSNordic},
+        {"microsoft-cp866",kCFStringEncodingDOSRussian},
+        {"microsoft-cp869",kCFStringEncodingDOSGreek2},
+        {"microsoft-cp874",kCFStringEncodingDOSThai},
+        {"microsoft-cp932",kCFStringEncodingDOSJapanese},
+        {"microsoft-cp936",kCFStringEncodingDOSChineseSimplif},
+        {"microsoft-cp949",kCFStringEncodingDOSKorean},
+        {"microsoft-cp950",kCFStringEncodingDOSChineseTrad},
+        {"microsoft-cp1250",kCFStringEncodingWindowsLatin2},
+        {"microsoft-cp1251",kCFStringEncodingWindowsCyrillic},
+        {"microsoft-cp1253",kCFStringEncodingWindowsGreek},
+        {"microsoft-cp1254",kCFStringEncodingWindowsLatin5},
+        {"microsoft-cp1255",kCFStringEncodingWindowsHebrew},
+        {"microsoft-cp1256",kCFStringEncodingWindowsArabic},
+        {"microsoft-cp1257",kCFStringEncodingWindowsBalticRim},
+        {"microsoft-cp1258",kCFStringEncodingWindowsVietnamese},
+        {"microsoft-cp1361",kCFStringEncodingWindowsKoreanJohab},
+    };
+	
+	for (unsigned int i = 0; i < sizeof(mappings)/sizeof(EncodingMapping); i++) {
+        if (strcmp(encoding,mappings[i].name) == 0)
+			// unsigned long
+            return CFStringConvertEncodingToNSStringEncoding(mappings[i].encoding);
+    }
+    
+    CFStringEncoding result = CFStringConvertIANACharSetNameToEncoding(CFStringRef([NSString stringWithCString:encoding encoding:NSUTF8StringEncoding]));
+    if (result != kCFStringEncodingInvalidId) {
+        return CFStringConvertEncodingToNSStringEncoding(result);
+    }
+	
+    const NSStringEncoding* encodings = [NSString availableStringEncodings];
+    while (*encodings){
+        NSString* encodingName = [NSString localizedNameOfStringEncoding:*encodings];
+        if (strstr ([encodingName UTF8String], encoding) != 0) {
+            return *encodings;
+		}
+        encodings++;
+    }
+	
+    fprintf(stderr, "Pareizrakstiba error: unrecognized encoding: %s. Setting to ASCII.\n",encoding);
+    return NSASCIIStringEncoding;
+}
+
 
 
 

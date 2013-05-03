@@ -1,20 +1,33 @@
-//
-//  PareizrakstibaDelegate.h
-//  Pareizrakstiba
-//
-//  Created by Reinis Adovičs on 02.05.13.
-//  Copyright (c) 2013. g. kroko. All rights reserved.
-//
+/*
+ PareizrakstibaDelegate.h
+ 
+ Pareizrakstība - Latviešu valodas pareizrakstības pārbaude
+ Pareizrakstiba - Latvian spellcheck
+ Copyright (C) 2008-2013 kroko / Reinis Adovics
+ 
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
 #import <Foundation/Foundation.h>
 #import <Foundation/NSSpellServer.h>
 #import "PareizrakstibaSpellChecker.h"
 
 /*
-// As I had an idea of introducing some basic grammar checking, made this a forwarding class.
-// Seperate class for spelling, rather than putting code right here into instance methods.
-// So grammar could be easily "modally" added later.
-*/
+ // As I had an idea of introducing some basic grammar checking, made this a forwarding class.
+ // Seperate class for spelling, rather than putting code right here into instance methods.
+ // So grammar could be easily "modally" added later.
+ */
 
 @class	PareizrakstibaSpellChecker; // Spelling checker class
 
