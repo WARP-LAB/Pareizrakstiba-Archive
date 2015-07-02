@@ -3,7 +3,7 @@
  
  Pareizrakstība - Latviešu valodas pareizrakstības pārbaude
  Pareizrakstiba - Latvian spellcheck
- Copyright (C) 2008-2013 kroko / Reinis Adovics
+ Copyright (C) 2008-2015 kroko / Reinis Adovics
  
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by

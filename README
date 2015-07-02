@@ -1,7 +1,5 @@
-Latest binary:
-http://www.kroko.me/apps/Pareizrakstiba3.1beta.dmg.zip
 
-This is for OS X 10.7+. Source of the old releases for 10.4-10.6, PPC, UB, Intel, 36&64 bit are not yet posted here.
+This is for OS X 10.7+. Source of the old releases for 10.4-10.6, PPC, UB, Intel, 36&64 bit are not and will not be posted here. All the old binaries and installers however are still available at the project site for download, thus you're not lost if still using some old PPC beast.
 
 ////////////////////////////////////////////////////
 
@@ -19,15 +17,18 @@ Installation
 
 • If you want to set up this Latvian spellcheck then a change in system preferences is
 	required due to the new sandboxing and certification model.
-	Under System Preferences : Security & Privacy : General change settings of
-	Allow applications downloaded from to Anywhere.
+	Under System Preferences : Security & Privacy : General change settings of 
+		Allow applications downloaded from to Anywhere.
 	Default for OS X 10.7 is Anywhere
 	Default for OS X 10.8 is Mac App Store and identified developers
 • Install using Uzstādīt Pareizrakstību.pkg
-• Run Iespējot Pareizrakstību (Enable Pareizrakstība) and restart the computer.
+• Run Iespējot Pareizrakstību (Enable Pareizrakstība) and restart the computer. (optional)
+• On first time when using spellcheck (in whatever application) OS might throw a 
+	dialog asking if you are willing to run Pareizrakstiba for the
+	first time. Accept.
 • If Latvian spellcheck does not show after the restart repeat the enabling process.
 • The installation sets up Latvian spellcheck for the whole system, however each
-	user account needs to enable it seperately.
+	user account needs to enable it separately.
 
 • Use Izdzēst Pareizrakstību to remove the spellcheck from the system.
 
@@ -54,6 +55,15 @@ Additional information
 • Pareizrakstība completely removes cocoAspell.
 
 Version history
+
+• v3.2
+02.07.2015.
+A version for Mac OS X 10.10+ (64-bit) created.
+Built w/ deployment target 10.9, so it should work also from 10.9.
+However v3.1 is still suggested for OS X 10.7 to 10.9.
+Beta as it is not certified and code signed.
+Using Latvian affix table v.1.1.0. (21.05.2015.).
+Using Hunspell 1.3.3. (02.06.2014.).
 
 • v3.1
 03.05.2013.
@@ -100,4 +110,64 @@ Latviešu valodas pareizrakstības pārbaudes bibliotēka- v.0.7.3 2008-02-22 ©
 	- Affix and dictionary files are converted to UTF-8.
 	- Some changes in aff (TRY UTF-8).
 	- Removed all unnecessary information.
+	
+	
+```
+
+/*
+ * Pareizrakstība - Latviešu valodas pareizrakstības pārbaude
+ * Pareizrakstiba - Latvian spellcheck
+ * Copyright (C) 2008-2015 kroko / Reinis Adovičs
+ * http://www.kroko.me code[AT]kroko.me
+ * Licenesed as
+ * GPL - GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+ * http://www.gnu.org/licenses/gpl.html
+ *
+ * Using:
+ * 1)
+ * Latviešu valodas affix fails lietošanai ar OpenOffice, LibreOffice u.c.
+ * Latvian affix table for OpenOffice, LibreOffice etc
+ * Copyright (C) 2002-2014 Janis Eisaks, jancs@dv.lv
+ * Licenesd as
+ * LGPL- GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
+ * 
+ * 2)
+ * Hunspell
+ * Licenesd as
+ * LGPL- GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999 or later
+ * or GPL- GNU GENERAL PUBLIC LICENSE Version 2 or later
+ * or MPL- MOZILLA PUBLIC LICENSE Version 1.1
+ *
+ * The Initial Developers of the Original Code are
+ * Kevin Hendricks (MySpell) and Laszlo Nemeth (Hunspell).
+ * Portions created by the Initial Developers are Copyright (C) 2002-2005
+ * the Initial Developers. All Rights Reserved.
+ *
+ * Contributor(s):
+ * David Einstein 
+ * Davide Prina
+ * Giuseppe Modugno 
+ * Gianluca Turconi
+ * Simon Brouwer
+ * Noll Janos
+ * Biro Arpad
+ * Goldman Eleonora
+ * Sarlos Tamas
+ * Bencsath Boldizsar
+ * Halacsy Peter
+ * Dvornik Laszlo
+ * Gefferth Andras
+ * Nagy Viktor
+ * Varga Daniel
+ * Chris Halls
+ * Rene Engelhard
+ * Bram Moolenaar
+ * Dafydd Jones
+ * Harri Pitkanen
+ * Andras Timar
+ * Tor Lillqvist
+ *
+ */
+
+```
 

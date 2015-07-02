@@ -3,7 +3,7 @@
  
  Pareizrakstība - Latviešu valodas pareizrakstības pārbaude
  Pareizrakstiba - Latvian spellcheck
- Copyright (C) 2008-2013 kroko / Reinis Adovics
+ Copyright (C) 2008-2015 kroko / Reinis Adovics
  
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@
 int main()
 {
     NSAutoreleasePool *autoreleasepool= [[NSAutoreleasePool alloc] init];
-	NSLog(@"Pareizrakstiba 3.1 (c) 2008-2013 kroko\n");
+	NSLog(@"Pareizrakstiba 3.2 (c) 2008-2015 kroko\n");
 	PareizrakstibaSpellServer *pareizrakstibaSpellServer = [[PareizrakstibaSpellServer alloc] init];
 	if ([pareizrakstibaSpellServer registerLanguage:@"lv" byVendor:@"Apple"])
 	{

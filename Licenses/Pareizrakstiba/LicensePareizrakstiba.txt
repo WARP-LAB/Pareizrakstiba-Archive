@@ -1,7 +1,7 @@
 /*
  * Pareizrakstība - Latviešu valodas pareizrakstības pārbaude
  * Pareizrakstiba - Latvian spellcheck
- * Copyright (C) 2008-2013 kroko / Reinis Adovics
+ * Copyright (C) 2008-2015 kroko / Reinis Adovičs
  * http://www.kroko.me code[AT]kroko.me
  * Licenesed as
  * GPL - GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
@@ -11,7 +11,7 @@
  * 1)
  * Latviešu valodas affix fails lietošanai ar OpenOffice, LibreOffice u.c.
  * Latvian affix table for OpenOffice, LibreOffice etc
- * Copyright (C) 2002-2013 Janis Eisaks, jancs@dv.lv
+ * Copyright (C) 2002-2014 Janis Eisaks, jancs@dv.lv
  * Licenesd as
  * LGPL- GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
  * 
