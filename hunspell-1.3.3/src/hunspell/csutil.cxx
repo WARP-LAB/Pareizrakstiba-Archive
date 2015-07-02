@@ -10,12 +10,16 @@
 #include "atypes.hxx"
 #include "langnum.hxx"
 
+// changes for pareizrakstiba
+// move this to header
+/*
 // Unicode character encoding information
 struct unicode_info {
   unsigned short c;
   unsigned short cupper;
   unsigned short clower;
 };
+ */
 
 #ifdef _WIN32
 #include <windows.h>

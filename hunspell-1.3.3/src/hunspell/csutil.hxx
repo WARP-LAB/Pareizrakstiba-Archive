@@ -52,6 +52,17 @@
 #define FORBIDDENWORD  65510
 #define ONLYUPCASEFLAG 65511
 
+// changes for pareizrakstiba
+// add declaration for unicode_info in this header that is already implemented in csutil.cxx (and disable there)
+struct unicode_info {
+    unsigned short c;
+    unsigned short cupper;
+    unsigned short clower;
+};
+// change for pareizrakstiba
+// add header for FILE type
+#include <stdio.h>
+
 // fopen or optional _wfopen to fix long pathname problem of WIN32
 LIBHUNSPELL_DLL_EXPORTED FILE * myfopen(const char * path, const char * mode);
 
