@@ -1,14 +1,28 @@
-# Latvieğu valodas affix fails lietoğanai ar OpenOffice, LibreOffice u.c.
-# Latvian affix table for OpenOffice, LibreOffice etc
+# LatvieÅ¡u valodas affix fails lietoÅ¡anai ar OpenOffice v.v. 2.4.1 un 3.x.x,
+# LibreOffice u.c. aplikÄcijÄm, kas pareizrakstÄ«bas pÄrbaudei izmanto HunSpell
+# Latvian affix table for OpenOffice v.v. 2.4.1 and 3.x.x, LibreOffice
+# and other applications using HunSpell as the backend
 #
-# Copyright (C) 2002-2013 Janis Eisaks, jancs@dv.lv
+# Copyright (C) 2002-2015 Janis Eisaks, jancs@dv.lv
 #
+# Versija//Version: 1.1.0
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+#
+Versijas informÄcija 1.1.0
 
-=================
-Version info 0.9.6
-Svarîgs paziòojums: 
-ğî ir vispçdçjâkâ vârdnîcas versija, kas ir 100% MySpell savietojama. 
-Ar nâkoğo laidienu (v.1.0.0) tiks uzsâkta HunSpell funkcionalitâtes ievieğana.
-
-Izmaiòas ğajâ versijâ:
-- koriìçts .dic fails
+IzmaiÅ†as Å¡ajÄ vesijÄ:
+- laboti vairÄki afiksi;
+- papildinÄts vÄrdu krÄjums;

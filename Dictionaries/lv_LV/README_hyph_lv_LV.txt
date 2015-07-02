@@ -1,10 +1,10 @@
-# Latvieğu valodas pârnesumu veidoğanas trafaretu fails
+# LatvieÅ¡u valodas pÄrnesumu veidoÅ¡anas trafaretu fails
 # Latvian hyphenation dictionary for OpenOffice 1.0 and higher
 #
-# Copyright (C) 2004-2005 Jânis Vilims, jvilims@apollo.lv
+# Copyright (C) 2004-2005 JÄnis Vilims, jvilims@apollo.lv
 #
-# Ğî bibliotçka tiek licencçta ar Lesser General Public Licence (LGPL) 2.1 nosacîjumiem. 
-# Licences nosacîjumi pievienoti failâ license.txt vai iegûstami tîmekïa vietnç  
+# Å Ä« bibliotÄ“ka tiek licencÄ“ta ar Lesser General Public Licence (LGPL) 2.1 nosacÄ«jumiem. 
+# Licences nosacÄ«jumi pievienoti failÄ license.txt vai iegÅ«stami tÄ«mekÄ¼a vietnÄ“  
 # http://www.gnu.org/copyleft/lesser.txt 
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -24,100 +24,100 @@
 # Versija: 0.3.
 
 #
-# Pateicos Dr. Andrejam Spektoram par izrâdîto sapratni un atbalstu
+# Pateicos Dr. Andrejam Spektoram par izrÄdÄ«to sapratni un atbalstu
 
 
-1. ÎSS BIBLIOTÇKAS RAKSTUROJUMS.
-Pagaidâm ğis pârnesumu licçjs òem vçrâ tikai daïu no latvieğu
-valodas likumiem vârdu pârneğanai jaunâ rindâ. Ğis risinâjums
-nepretendç uz pilnîgi pareizu latvieğu valodas pârnesumu
-izvietoğanu.
-Pârnesumu veidoğanas noteikumi iegûti no tîmekïa vietnes http://www.liis.lv/latval/orto/vdjpr.htm (26.05.2004)
+1. ÄªSS BIBLIOTÄ’KAS RAKSTUROJUMS.
+PagaidÄm Å¡is pÄrnesumu licÄ“js Å†em vÄ“rÄ tikai daÄ¼u no latvieÅ¡u
+valodas likumiem vÄrdu pÄrneÅ¡anai jaunÄ rindÄ. Å is risinÄjums
+nepretendÄ“ uz pilnÄ«gi pareizu latvieÅ¡u valodas pÄrnesumu
+izvietoÅ¡anu.
+PÄrnesumu veidoÅ¡anas noteikumi iegÅ«ti no tÄ«mekÄ¼a vietnes http://www.liis.lv/latval/orto/vdjpr.htm (26.05.2004)
 
-Versijas "kvalitâtes" izmaiòu novçtçjumam izmantotâ metodika: 
-(izmantojot libhnj un salîdzinot ar A. Spektora laipni piedâvâtâs pârnesumu veidoğanas programmas rezultâtiem, pârbaudîti 16108 vârdi) 
-795 atğíirîbas no 16108 vârdiem (95,06%)
+Versijas "kvalitÄtes" izmaiÅ†u novÄ“tÄ“jumam izmantotÄ metodika: 
+(izmantojot libhnj un salÄ«dzinot ar A. Spektora laipni piedÄvÄtÄs pÄrnesumu veidoÅ¡anas programmas rezultÄtiem, pÄrbaudÄ«ti 16108 vÄrdi) 
+795 atÅ¡Ä·irÄ«bas no 16108 vÄrdiem (95,06%)
 
-2. VERSIJU IZMAIÒU PÂRSKATS:
-v 0.3. ("kvalitâte" - 95,06%)
- 1. Papildus apstrâde dubultajiem priedçkïiem (jâie, neaiz, u.c.)
- 2. Ğabloni papildinâti ar atseviğíiem izòçmumu gadîjumiem
- 3. Papildus noteikumi, ja pçc priedçkïa seko patskanis.
-v 0.2. ("kvalitâte" - 94,08%)
- 1. Pievienoti pârnesumi izskaòâm da-ma, ğa-na
-v 0.1. ("kvalitâte" - 90,10%)
- 1. Patskaòu/lîdzskaòu/patskaòu noteikumi P-LP, PL-LP, PL-LLP un PLL-LLP (P-patskanis, L-lîdzskanis);
- 2. dz, dş nesadalîğana;
- 3. Priedçkïu noteikumi (varbût ne visi tad, ja vârda sâkumâ ir vairâki priedçkïi);
- 4. Izskaòu noteikumi (bet ne visos locîjumos, tad, ja izskaòas var locît).
- 5. daşi izòçmumi (saule, priekğnieks, u.c.)
+2. VERSIJU IZMAIÅ…U PÄ€RSKATS:
+v 0.3. ("kvalitÄte" - 95,06%)
+ 1. Papildus apstrÄde dubultajiem priedÄ“kÄ¼iem (jÄie, neaiz, u.c.)
+ 2. Å abloni papildinÄti ar atseviÅ¡Ä·iem izÅ†Ä“mumu gadÄ«jumiem
+ 3. Papildus noteikumi, ja pÄ“c priedÄ“kÄ¼a seko patskanis.
+v 0.2. ("kvalitÄte" - 94,08%)
+ 1. Pievienoti pÄrnesumi izskaÅ†Äm da-ma, Å¡a-na
+v 0.1. ("kvalitÄte" - 90,10%)
+ 1. PatskaÅ†u/lÄ«dzskaÅ†u/patskaÅ†u noteikumi P-LP, PL-LP, PL-LLP un PLL-LLP (P-patskanis, L-lÄ«dzskanis);
+ 2. dz, dÅ¾ nesadalÄ«Å¡ana;
+ 3. PriedÄ“kÄ¼u noteikumi (varbÅ«t ne visi tad, ja vÄrda sÄkumÄ ir vairÄki priedÄ“kÄ¼i);
+ 4. IzskaÅ†u noteikumi (bet ne visos locÄ«jumos, tad, ja izskaÅ†as var locÄ«t).
+ 5. daÅ¾i izÅ†Ä“mumi (saule, priekÅ¡nieks, u.c.)
 
-Citi latvieğu valodas noteikumi pârneğanai jaunâ rindâ pagaidâm
-nav òemti vçrâ.
+Citi latvieÅ¡u valodas noteikumi pÄrneÅ¡anai jaunÄ rindÄ pagaidÄm
+nav Å†emti vÄ“rÄ.
 
-Bibliotçkas optimizâcija, - tikai sâkotnçjâ, iespçjama tâlâka
-optimizâcija, latvieğu valodai neraksturîgu kombinâciju izòemğana no
-pârnesumu veidoğanas noteikumiem.
+BibliotÄ“kas optimizÄcija, - tikai sÄkotnÄ“jÄ, iespÄ“jama tÄlÄka
+optimizÄcija, latvieÅ¡u valodai neraksturÄ«gu kombinÄciju izÅ†emÅ¡ana no
+pÄrnesumu veidoÅ¡anas noteikumiem.
 
 
-3. MINIMÂLÂ UZSTÂDÎĞANAS INSTRUKCIJA.
+3. MINIMÄ€LÄ€ UZSTÄ€DÄªÅ ANAS INSTRUKCIJA.
 
-3.1. PUSAUTOMÂTISKAIE VARIANTI (izmantojot DicOOo.sxw un lv_LV-pack.zip vai Latvian_DicOOo.sxw):
-Nepiecieğams: uzinstalçta OpenOffice.org versija.
-Piezîme: Ja, atverot dokumentu, parâdâs droğîbas brîdinâjums, nepiecieğams atïaut programmas makrosu darbîbu, 
-piemçram, angliskajâ OO.org versijâ nospieşot pogu "Enable macros".
+3.1. PUSAUTOMÄ€TISKAIE VARIANTI (izmantojot DicOOo.sxw un lv_LV-pack.zip vai Latvian_DicOOo.sxw):
+NepiecieÅ¡ams: uzinstalÄ“ta OpenOffice.org versija.
+PiezÄ«me: Ja, atverot dokumentu, parÄdÄs droÅ¡Ä«bas brÄ«dinÄjums, nepiecieÅ¡ams atÄ¼aut programmas makrosu darbÄ«bu, 
+piemÄ“ram, angliskajÄ OO.org versijÄ nospieÅ¾ot pogu "Enable macros".
 
 3.1.1. Izmantojot DicOOo.sxw
-Pagaidâm, kamçr vârdnîca nav pilnîbâ iekïauta Lingucomponents projektâ, droği zinâms, ka darbojas 
-instalâcijas "offline" jeb nesaistes versija. Tieğsaistes versija varçtu bût pieejama tuvâkajâ laikâ.
-Jâatver <OpenOffice.org fails DicOOo.sxw un jâseko instalâcijas norâdîjumiem ğajâ dokumentâ.
-Jâizvçlas kâda dokumentâ iekïautâ saskarnes valoda un "offline" instalâcijas versija."Offline" versijâ jânorâda
-ceïğ uz lv_LV-pack.zip failu un jâseko instalâcijas norâdîjumiem.
+PagaidÄm, kamÄ“r vÄrdnÄ«ca nav pilnÄ«bÄ iekÄ¼auta Lingucomponents projektÄ, droÅ¡i zinÄms, ka darbojas 
+instalÄcijas "offline" jeb nesaistes versija. TieÅ¡saistes versija varÄ“tu bÅ«t pieejama tuvÄkajÄ laikÄ.
+JÄatver <OpenOffice.org fails DicOOo.sxw un jÄseko instalÄcijas norÄdÄ«jumiem Å¡ajÄ dokumentÄ.
+JÄizvÄ“las kÄda dokumentÄ iekÄ¼autÄ saskarnes valoda un "offline" instalÄcijas versija."Offline" versijÄ jÄnorÄda
+ceÄ¼Å¡ uz lv_LV-pack.zip failu un jÄseko instalÄcijas norÄdÄ«jumiem.
 
 3.1.2. Izmantojot Latvian_DicOOo.sxw
-Pagaidâm, kamçr vârdnîca nav pilnîbâ iekïauta Lingucomponents projektâ, droği zinâms, ka darbojas 
-instalâcijas "offline" jeb nesaistes versija. Tieğsaistes versija varçtu bût pieejama tuvâkajâ laikâ.
-Jâatver <OpenOffice.org fails Latvian_DicOOo.sxw un jâseko instalâcijas norâdîjumiem ğajâ dokumentâ.
-Noklusçtie uzstâdîjumi jau ir sagatavoti latvieğu valodas palîglîdzekïu uzstâdîğanai.
+PagaidÄm, kamÄ“r vÄrdnÄ«ca nav pilnÄ«bÄ iekÄ¼auta Lingucomponents projektÄ, droÅ¡i zinÄms, ka darbojas 
+instalÄcijas "offline" jeb nesaistes versija. TieÅ¡saistes versija varÄ“tu bÅ«t pieejama tuvÄkajÄ laikÄ.
+JÄatver <OpenOffice.org fails Latvian_DicOOo.sxw un jÄseko instalÄcijas norÄdÄ«jumiem Å¡ajÄ dokumentÄ.
+NoklusÄ“tie uzstÄdÄ«jumi jau ir sagatavoti latvieÅ¡u valodas palÄ«glÄ«dzekÄ¼u uzstÄdÄ«Å¡anai.
 
-3.2 MANUÂLAIS VARIANTS:
-Îsa instalâcijas instrukcija uz Windows:
-Pieòemot, ka jau tiek lietots J.Eisaka OoO pareizrakstîbas
-pârbaudes rîks (http://sourceforge.net/projects/openoffice-lv/) un
-tas ir instalçts atbilstoği dokumentâcijai:
-Jâbeidz darbs ar visâm OoO programmâm (arî "Exit Quickstarter", ja
+3.2 MANUÄ€LAIS VARIANTS:
+Äªsa instalÄcijas instrukcija uz Windows:
+PieÅ†emot, ka jau tiek lietots J.Eisaka OoO pareizrakstÄ«bas
+pÄrbaudes rÄ«ks (http://sourceforge.net/projects/openoffice-lv/) un
+tas ir instalÄ“ts atbilstoÅ¡i dokumentÄcijai:
+JÄbeidz darbs ar visÄm OoO programmÄm (arÄ« "Exit Quickstarter", ja
 tas ticis palaists)
 Atpakojam pievienotos failus.
-Daudzlietotâju instalâcijas gadîjumâ (citos gadîjumos rîkoties
-lîdzîgi, atbilstoği http://sourceforge.net/projects/openoffice-lv/
+DaudzlietotÄju instalÄcijas gadÄ«jumÄ (citos gadÄ«jumos rÄ«koties
+lÄ«dzÄ«gi, atbilstoÅ¡i http://sourceforge.net/projects/openoffice-lv/
 atrodamai instrukcijai):
-Ja nav pievienotas citas valodu bibliotçkas, tad visus failus
-(izòemot licence.txt un lasimani.txt) iekopçjam folderî
+Ja nav pievienotas citas valodu bibliotÄ“kas, tad visus failus
+(izÅ†emot licence.txt un lasimani.txt) iekopÄ“jam folderÄ«
 <OpenOffice dir>/share/dict/
-Ja ir pievienotas citas valodu bibliotçkas, tad folderî
-<OpenOffice dir>/share/dict/ jâiekopç tikai fails hyph_lv_LV.dic
-un jâatver <OpenOffice dir>/share/dict/ direktorijâ esoğais fails
-dictionary.lst un tam jâpievieno jauna rindiòa "HYPH lv LV
+Ja ir pievienotas citas valodu bibliotÄ“kas, tad folderÄ«
+<OpenOffice dir>/share/dict/ jÄiekopÄ“ tikai fails hyph_lv_LV.dic
+un jÄatver <OpenOffice dir>/share/dict/ direktorijÄ esoÅ¡ais fails
+dictionary.lst un tam jÄpievieno jauna rindiÅ†a "HYPH lv LV
 hyph_lv_LV"
-Palaişam kâdu OoO programmu.
+PalaiÅ¾am kÄdu OoO programmu.
 
 No Tools->Options->Language settings->Writing Aids->(Edit poga pie
-"Writing Aids") izvçlamies latvieğu valodu un uzstâdâm iespçju
-izmantot latvieğu valodas pârnesumu licçju.
-Lietojam pârnesumu veidoğanas rîku (uzstâdot izmantotâ vai
-noklusçtâ teksta stila definîcijâ TextFlow->Hyphenation-
+"Writing Aids") izvÄ“lamies latvieÅ¡u valodu un uzstÄdÄm iespÄ“ju
+izmantot latvieÅ¡u valodas pÄrnesumu licÄ“ju.
+Lietojam pÄrnesumu veidoÅ¡anas rÄ«ku (uzstÄdot izmantotÄ vai
+noklusÄ“tÄ teksta stila definÄ«cijÄ TextFlow->Hyphenation-
 >Automatic=On).
 
-Instalâcija uz citâm platformâm jâveic lîdzîgi. Ğajâ gadîjumâ
-jâizmanto padomi no tîmekïa vietnes
+InstalÄcija uz citÄm platformÄm jÄveic lÄ«dzÄ«gi. Å ajÄ gadÄ«jumÄ
+jÄizmanto padomi no tÄ«mekÄ¼a vietnes
 http://sourceforge.net/projects/openoffice-lv/
 
-CITI NOSACÎJUMI UN IZMANTOĞANAS IESPÇJAS
-Ja ir idejas, kâ ğo varçtu uzlabot, vai ir zinâma realizâcija
-latvieğu valodas pârnesumu salicçjam Tex, var veikt uzlabojumus
-vai izmantot jau pieejamos rîkus no Tex.
-Sprieşot pçc pieejamâs informâcijas, ğo pârnesumu veidoğanas failu
-varçtu izmantot arî Tex, attiecîgi papildinot/izmainot galvenes
-sadaïu.
+CITI NOSACÄªJUMI UN IZMANTOÅ ANAS IESPÄ’JAS
+Ja ir idejas, kÄ Å¡o varÄ“tu uzlabot, vai ir zinÄma realizÄcija
+latvieÅ¡u valodas pÄrnesumu salicÄ“jam Tex, var veikt uzlabojumus
+vai izmantot jau pieejamos rÄ«kus no Tex.
+SprieÅ¾ot pÄ“c pieejamÄs informÄcijas, Å¡o pÄrnesumu veidoÅ¡anas failu
+varÄ“tu izmantot arÄ« Tex, attiecÄ«gi papildinot/izmainot galvenes
+sadaÄ¼u.
 
-Ievçrojam licences nosacîjumus.
+IevÄ“rojam licences nosacÄ«jumus.
