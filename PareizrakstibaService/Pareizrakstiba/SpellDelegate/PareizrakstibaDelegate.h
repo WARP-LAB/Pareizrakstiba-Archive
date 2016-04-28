@@ -3,7 +3,7 @@
  
  Pareizrakstība - Latviešu valodas pareizrakstības pārbaude
  Pareizrakstiba - Latvian spellcheck
- Copyright (C) 2008-2015 kroko / Reinis Adovics
+ Copyright (C) 2008-2016 kroko / Reinis Adovics
  
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -19,9 +19,8 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#import <Foundation/Foundation.h>
 #import <Foundation/NSSpellServer.h>
-#import "PareizrakstibaSpellChecker.h"
+#import "PareizrakstibaSpellWorker.h"
 
 /*
  As I had the idea of introducing some basic grammar checking, made this a forwarding class.
@@ -29,11 +28,12 @@
  So grammar could be easily "modally" added later.
  */
 
-@class	PareizrakstibaSpellChecker; // Spelling checker class
+@protocol NSSpellServerDelegate; // Force preprocess NSSpellServerDelegate protocol before PareizrakstibaDelegate interface
+@class	PareizrakstibaSpellWorker; // Spelling checker class
 
-// Since 10.6 this is informal protocol
+// Until 10.6 NSSpellServerDelegate is informal protocol
 @interface PareizrakstibaDelegate : NSObject <NSSpellServerDelegate> {
-    PareizrakstibaSpellChecker*		mySC;
+    PareizrakstibaSpellWorker*		mySC;
 }
 // construct/deconstruct
 - (id)init;

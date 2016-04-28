@@ -1,9 +1,9 @@
 /*
- PareizrakstibaSpellChecker.h
+ PareizrakstibaSpellWorker.h
  
  Pareizrakstība - Latviešu valodas pareizrakstības pārbaude
  Pareizrakstiba - Latvian spellcheck
- Copyright (C) 2008-2015 kroko / Reinis Adovics
+ Copyright (C) 2008-2016 kroko / Reinis Adovics
  
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -19,7 +19,6 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#import <Foundation/Foundation.h>
 #import <Foundation/NSSpellServer.h>
 #import <CoreFoundation/CoreFoundation.h>
 #import "hunspell.hxx"
@@ -38,7 +37,7 @@ typedef unsigned int NSUInteger;
 
 class	Hunspell;
 
-@interface PareizrakstibaSpellChecker : NSObject {
+@interface PareizrakstibaSpellWorker : NSObject {
 	Hunspell* myHS;
     NSMutableCharacterSet *wordCharSet;
 }

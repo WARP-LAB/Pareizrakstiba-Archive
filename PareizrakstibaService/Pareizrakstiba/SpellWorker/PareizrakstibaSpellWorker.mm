@@ -1,9 +1,9 @@
 /*
- PareizrakstibaSpellChecker.mm
+ PareizrakstibaSpellWorker.mm
  
  Pareizrakstība - Latviešu valodas pareizrakstības pārbaude
  Pareizrakstiba - Latvian spellcheck
- Copyright (C) 2008-2015 kroko / Reinis Adovics
+ Copyright (C) 2008-2016 kroko / Reinis Adovics
  
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -19,14 +19,14 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#import "PareizrakstibaSpellChecker.h"
+#import "PareizrakstibaSpellWorker.h"
 
 struct EncodingMapping {
 	const char* name;
 	CFStringEncoding encoding;
 };
 
-@implementation PareizrakstibaSpellChecker
+@implementation PareizrakstibaSpellWorker
 
 - (id)init
 {

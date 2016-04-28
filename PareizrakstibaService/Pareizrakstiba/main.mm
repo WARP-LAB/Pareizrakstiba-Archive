@@ -3,7 +3,7 @@
  
  Pareizrakstība - Latviešu valodas pareizrakstības pārbaude
  Pareizrakstiba - Latvian spellcheck
- Copyright (C) 2008-2015 kroko / Reinis Adovics
+ Copyright (C) 2008-2016 kroko / Reinis Adovics
  
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -20,23 +20,21 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <Foundation/NSSpellServer.h>
 #import "PareizrakstibaSpellServer.h"
 #import "PareizrakstibaDelegate.h"
 
 int main()
 {
     NSAutoreleasePool *autoreleasepool= [[NSAutoreleasePool alloc] init];
-	NSLog(@"Pareizrakstiba 3.2 (c) 2008-2015 kroko\n");
 	PareizrakstibaSpellServer *pareizrakstibaSpellServer = [[PareizrakstibaSpellServer alloc] init];
 	if ([pareizrakstibaSpellServer registerLanguage:@"lv" byVendor:@"Apple"])
 	{
 		[pareizrakstibaSpellServer setDelegate:[[[PareizrakstibaDelegate alloc] init] autorelease]];
 		[pareizrakstibaSpellServer run];
-		fprintf(stderr, "Unexpected death of Pareizrakstiba!\n");
 	} else {
-		fprintf(stderr, "NSSpellServer unable to register Latvian language.\n");
+		fprintf(stderr, "Pareizrakstiba: NSSpellServer unable to register Latvian language.\n");
 	}
+	NSLog(@"Pareizrakstiba quiting.\n");
 	[autoreleasepool release];
 	return 0;
 }
