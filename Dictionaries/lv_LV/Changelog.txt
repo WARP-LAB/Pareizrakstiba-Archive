@@ -3,9 +3,9 @@
 # Latvian affix table for OpenOffice v.v. 2.4.1 and 3.x.x, LibreOffice
 # and other applications using HunSpell as the backend
 #
-# Copyright (C) 2002-2015 Janis Eisaks, jancs@dv.lv
+# Copyright (C) 2002-2016 Janis Eisaks, jancs@dv.lv
 #
-# Versija//Version: 1.1.0
+# Versija//Version: 1.2.0
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -21,6 +21,13 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 #
+Versijas informācija 1.2.0
+
+Izmaiņas šajā vesijā:
+- laboti afiksi
+- papildināts vārdu krājums
+
+==================
 Versijas informācija 1.1.0
 
 Izmaiņas šajā vesijā:

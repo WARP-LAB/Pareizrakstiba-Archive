@@ -3,9 +3,9 @@
 # Latvian affix table for OpenOffice v.v. 2.4.1 and 3.x.x, LibreOffice
 # and other applications using HunSpell as the backend
 #
-# Copyright (C) 2002-2014 Janis Eisaks, jancs@dv.lv
+# Copyright (C) 2002-2016 Janis Eisaks, jancs@dv.lv
 #
-# Versija//Version: 1.1.0
+# Versija//Version: 1.2.0
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -51,7 +51,7 @@ CIRCUMFIX |
 MAXNGRAMSUGS 6
 NOSPLITSUGS
 
-REP 23
+REP 25
 REP ike iek
 REP via vai
 REP lig līg
@@ -66,6 +66,8 @@ REP šēšan sēšan
 REP klap kalp
 REP musm mums
 REP mato manto
+REP stirpi stipri
+REP visamz vismaz
 REP ziņ izņ
 REP ija ījā
 REP eja ējā
