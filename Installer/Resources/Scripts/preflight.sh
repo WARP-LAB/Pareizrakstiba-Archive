@@ -1,17 +1,49 @@
 #!/bin/sh
-sudo killall Pareizrakstiba
+
+# Pareizrakstiba installer preflight
+
+# major.minor.revision
+SYSVER="$(sw_vers -productVersion)"
+# major.minor
+SYSVER_MIN="${SYSVER#*.}"
+# minor
+SYSVER_MIN="${SYSVER_MIN%%.*}"
+
+# Kill Pareizrakstiba if running
+sudo killall Pareizrakstiba > /dev/null 2>&1
+sudo rm -rf /Library/Services/Pareizrakstiba.service
+
+# Flush Services
+PBS="/System/Library/CoreServices/pbs"
+if [ -f $PBS ];
+then
+   /System/Library/CoreServices/pbs -flush
+fi
+
+# Make Services dir if not exists
 sudo mkdir -p /Library/Services/
+
+# Set permissions based on OS version
+if [ $SYSVER_MIN -gt "6" ];
+then
 sudo chown -R root:wheel /Library/Services/
 sudo chmod -R 755 /Library/Services/
-sudo rm -rf /Library/Services/Pareizrakstiba.service
-# flush it
-/System/Library/CoreServices/pbs -flush
+else
+sudo chown -R root:admin /Library/Services/
+sudo chmod -R 775 /Library/Services/
+fi
+
+# Remove Pareizrakstiba installer stuff
 sudo rm -rf /Library/Application\ Support/Pareizrakstiba
 sudo rm -rf /Library/Receipts/pareizrakstiba.pkg
 sudo rm -rf /Library/Receipts/Uzstādīt\ Pareizrakstību.pkg
 sudo rm -rf /Library/Receipts/Izdzēst\ Pareizrakstību.pkg
 sudo rm -rf /Library/Receipts/Latviešu\ valodas\ afiksu\ tabula\ un\ vārdnīca.pkg
 sudo rm -rf /Library/Receipts/Latviešu\ valodas\ pareizrakstības\ pārbaude.pkg
+
+# Remove check spell and cocoAspell
+sudo killall CheckSpell > /dev/null 2>&1
+sudo killall cocoAspell > /dev/null 2>&1
 sudo rm -rf /Library/Services/CheckSpell.service
 sudo rm -rf /Library/Receipts/CheckSpell.mpkg
 sudo rm -rf ~/Library/Services/CheckSpell.service
@@ -45,3 +77,4 @@ sudo rm -rf ~/Library/Services/cocoAspell.service
 sudo rm -rf /Library/Receipts/AspellEnglishDictionary.pkg
 sudo rm -rf /Library/Receipts/aspell.pkg
 sudo rm -rf /Library/Receipts/Spelling.pkg
+
