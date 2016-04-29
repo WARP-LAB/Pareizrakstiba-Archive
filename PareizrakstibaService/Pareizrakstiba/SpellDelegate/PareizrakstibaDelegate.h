@@ -23,7 +23,7 @@
 #import "PareizrakstibaSpellWorker.h"
 
 /*
- As I had the idea of introducing some basic grammar checking, made this a forwarding class.
+ As I had the idea of introducing some basic grammar checking, made this a forwarding class to Worker so I could split tasks between different workers.
  Seperate class for spelling, rather than putting code right here into instance methods.
  So grammar could be easily "modally" added later.
  */
@@ -33,7 +33,7 @@
 
 // Until 10.6 NSSpellServerDelegate is informal protocol
 @interface PareizrakstibaDelegate : NSObject <NSSpellServerDelegate> {
-    PareizrakstibaSpellWorker*		mySC;
+    PareizrakstibaSpellWorker *mySC;
 }
 // construct/deconstruct
 - (id)init;
@@ -42,22 +42,28 @@
 ////////////////////////////////////
 // IMPLEMENTED
 
-// Check Spelling in Strings
+// Check Spelling in Strings, manage guesses and completions
 - (NSRange)spellServer:(NSSpellServer *)sender findMisspelledWordInString:(NSString *)stringToCheck language:(NSString *)language wordCount:(NSInteger *)wordCount countOnly:(BOOL)countOnly;
 - (NSArray *)spellServer:(NSSpellServer *)sender suggestGuessesForWord:(NSString *)word inLanguage:(NSString *)language;
+- (NSArray *)spellServer:(NSSpellServer *)sender suggestCompletionsForPartialWordRange:(NSRange)range inString:(NSString *)string language:(NSString *)language;
 
 // Managing the Spelling Dictionary
-- (NSArray *)spellServer:(NSSpellServer *)sender suggestCompletionsForPartialWordRange:(NSRange)range inString:(NSString *)string language:(NSString *)language;
-- (void)spellServer:(NSSpellServer *)sender recordResponse:(NSUInteger)response toCorrection:(NSString *)correction forWord:(NSString *)word language:(NSString *)language; // Required since 10.7!
 - (void)spellServer:(NSSpellServer *)sender didLearnWord:(NSString *)word inLanguage:(NSString *)language;
 - (void)spellServer:(NSSpellServer *)sender didForgetWord:(NSString *)word inLanguage:(NSString *)language;
 
+#if MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_7
+- (void)spellServer:(NSSpellServer *)sender recordResponse:(NSUInteger)response toCorrection:(NSString *)correction forWord:(NSString *)word language:(NSString *)language;
+#endif
 
 ////////////////////////////////////
 // NOT IMPLEMENTED
 
-// Check grammar in strings
-// - (NSArray *)spellServer:(NSSpellServer *)sender checkString:(NSString *)stringToCheck offset:(NSUInteger)offset types:(NSTextCheckingTypes)checkingTypes options:(NSDictionary *)options orthography:(NSOrthography *)orthography wordCount:(NSInteger *)wordCount;
+// Gives the delegate the opportunity to analyze both the spelling and grammar simultaneously, which is more efficient.
+// Available in OS X v10.6 and later
+//- (NSArray *)spellServer:(NSSpellServer *)sender checkString:(NSString *)stringToCheck offset:(NSUInteger)offset types:(NSTextCheckingTypes)checkingTypes options:(NSDictionary *)options orthography:(NSOrthography *)orthography wordCount:(NSInteger *)wordCount;
+
+// Gives the delegate the opportunity to customize the grammatical analysis of a given string.
+// Available in OS X v10.5 and later.
 //- (NSRange)spellServer:(NSSpellServer *)sender checkGrammarInString:(NSString *)string language:(NSString *)language details:(NSArray **)outDetails;
 
 

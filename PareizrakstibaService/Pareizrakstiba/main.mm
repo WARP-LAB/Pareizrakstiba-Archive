@@ -34,7 +34,7 @@ int main()
 	} else {
 		fprintf(stderr, "Pareizrakstiba: NSSpellServer unable to register Latvian language.\n");
 	}
-	NSLog(@"Pareizrakstiba quiting.\n");
+	NSLog(@"Pareizrakstiba quitting.\n");
 	[autoreleasepool release];
 	return 0;
 }

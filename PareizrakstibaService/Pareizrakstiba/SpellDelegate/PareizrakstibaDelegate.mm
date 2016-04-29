@@ -56,12 +56,6 @@
 	return [mySC spellServer:sender suggestCompletionsForPartialWordRange:range inString:string language:language];
 }
 
-// Notifies the spell checker of the users’s response to a correction. (required)
-- (void)spellServer:(NSSpellServer *)sender recordResponse:(NSUInteger)response toCorrection:(NSString *)correction forWord:(NSString *)word language:(NSString *)language
-{
-    return [mySC spellServer:sender recordResponse:response toCorrection:correction forWord:word language:language];
-}
-
 // User has added the specified word to the user’s list of acceptable words in the specified language.
 - (void)spellServer:(NSSpellServer *)sender didLearnWord:(NSString *)word inLanguage:(NSString *)language
 {
@@ -74,7 +68,12 @@
 	return [mySC spellServer:sender didForgetWord:word inLanguage:language];
 }
 
-
-
+#if MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_7
+// Notifies the spell checker of the users’s response to a correction.
+- (void)spellServer:(NSSpellServer *)sender recordResponse:(NSUInteger)response toCorrection:(NSString *)correction forWord:(NSString *)word language:(NSString *)language
+{
+    return [mySC spellServer:sender recordResponse:response toCorrection:correction forWord:word language:language];
+}
+#endif
 
 @end

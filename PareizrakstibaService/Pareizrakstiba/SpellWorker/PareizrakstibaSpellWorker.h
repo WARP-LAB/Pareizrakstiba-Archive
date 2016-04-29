@@ -38,7 +38,7 @@ typedef unsigned int NSUInteger;
 class	Hunspell;
 
 @interface PareizrakstibaSpellWorker : NSObject {
-	Hunspell* myHS;
+	Hunspell *myHS;
     NSMutableCharacterSet *wordCharSet;
 }
 - (id)init;

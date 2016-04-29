@@ -122,7 +122,7 @@ struct EncodingMapping {
 #else
 	return NSMakeRange (NSNotFound, 0);
 #endif
-#endif  // MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_4
+#endif
 }
 
 // Suggest guesses for the correct spelling of the given misspelled word
@@ -158,7 +158,7 @@ struct EncodingMapping {
 {
 	/*
      I will use array that's returned by suggestGuessesForWord. However it is a suggestion list for the right spelling of the current partialy completed world,
-     not a suggstion for competion! There's a difference!
+     not a suggestion for a competion! There's a difference!
      return [self spellServer:sender suggestGuessesForWord:string inLanguage:language]; // reuse suggestGuessesForWord which returns an array of words
      */
 	
