@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F50DB0B51732F32B00709B17 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0B41732F32B00709B17 /* main.mm */; };
+		F50DB0B91732F3A500709B17 /* PareizrakstibaSpellServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0B81732F3A500709B17 /* PareizrakstibaSpellServer.mm */; };
+		F50DB0BD1732F54100709B17 /* PareizrakstibaDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0BC1732F54100709B17 /* PareizrakstibaDelegate.mm */; };
+		F50DB0C31732F98800709B17 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50DB0C21732F98800709B17 /* CoreFoundation.framework */; };
+		F50DB0C51732FCBD00709B17 /* Pareizrakstiba.icns in Resources */ = {isa = PBXBuildFile; fileRef = F50DB0C41732FCBD00709B17 /* Pareizrakstiba.icns */; };
+		F50DB0C81733002A00709B17 /* lv_LV in Resources */ = {isa = PBXBuildFile; fileRef = F50DB0C71733002A00709B17 /* lv_LV */; };
+		F50DB1091733071C00709B17 /* affentry.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0D61733071C00709B17 /* affentry.cxx */; };
+		F50DB10A1733071C00709B17 /* affixmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0D81733071C00709B17 /* affixmgr.cxx */; };
+		F50DB10B1733071C00709B17 /* csutil.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0DD1733071C00709B17 /* csutil.cxx */; };
+		F50DB10C1733071C00709B17 /* dictmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0DF1733071C00709B17 /* dictmgr.cxx */; };
+		F50DB10D1733071C00709B17 /* filemgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0E11733071C00709B17 /* filemgr.cxx */; };
+		F50DB10E1733071C00709B17 /* hashmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0E31733071C00709B17 /* hashmgr.cxx */; };
+		F50DB10F1733071C00709B17 /* hunspell.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0E61733071C00709B17 /* hunspell.cxx */; };
+		F50DB1121733071C00709B17 /* hunzip.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0EC1733071C00709B17 /* hunzip.cxx */; };
+		F50DB1191733071C00709B17 /* phonet.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0F51733071C00709B17 /* phonet.cxx */; };
+		F50DB11B1733071C00709B17 /* replist.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0F81733071C00709B17 /* replist.cxx */; };
+		F50DB11C1733071C00709B17 /* suggestmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0FA1733071C00709B17 /* suggestmgr.cxx */; };
+		F50DB11D1733071C00709B17 /* utf_info.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0FC1733071C00709B17 /* utf_info.cxx */; };
+		F50DB15B1733132400709B17 /* Licenses in Resources */ = {isa = PBXBuildFile; fileRef = F50DB15A1733132400709B17 /* Licenses */; };
+		F5F4E9561732F0C900D514E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F4E9551732F0C900D514E8 /* Cocoa.framework */; };
+		F91CCB921CD3830B00F1CFEF /* PareizrakstibaSpellWorker.mm in Sources */ = {isa = PBXBuildFile; fileRef = F91CCB911CD3830B00F1CFEF /* PareizrakstibaSpellWorker.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F50DB0B41732F32B00709B17 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		F50DB0B71732F3A500709B17 /* PareizrakstibaSpellServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PareizrakstibaSpellServer.h; path = SpellServer/PareizrakstibaSpellServer.h; sourceTree = "<group>"; };
+		F50DB0B81732F3A500709B17 /* PareizrakstibaSpellServer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PareizrakstibaSpellServer.mm; path = SpellServer/PareizrakstibaSpellServer.mm; sourceTree = "<group>"; };
+		F50DB0BB1732F54100709B17 /* PareizrakstibaDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PareizrakstibaDelegate.h; path = SpellDelegate/PareizrakstibaDelegate.h; sourceTree = "<group>"; };
+		F50DB0BC1732F54100709B17 /* PareizrakstibaDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PareizrakstibaDelegate.mm; path = SpellDelegate/PareizrakstibaDelegate.mm; sourceTree = "<group>"; };
+		F50DB0C21732F98800709B17 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F50DB0C41732FCBD00709B17 /* Pareizrakstiba.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Pareizrakstiba.icns; sourceTree = "<group>"; };
+		F50DB0C71733002A00709B17 /* lv_LV */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lv_LV; path = ../../Dictionaries/lv_LV; sourceTree = "<group>"; };
+		F50DB0D61733071C00709B17 /* affentry.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = affentry.cxx; sourceTree = "<group>"; };
+		F50DB0D71733071C00709B17 /* affentry.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = affentry.hxx; sourceTree = "<group>"; };
+		F50DB0D81733071C00709B17 /* affixmgr.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = affixmgr.cxx; sourceTree = "<group>"; };
+		F50DB0D91733071C00709B17 /* affixmgr.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = affixmgr.hxx; sourceTree = "<group>"; };
+		F50DB0DA1733071C00709B17 /* atypes.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = atypes.hxx; sourceTree = "<group>"; };
+		F50DB0DB1733071C00709B17 /* baseaffix.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = baseaffix.hxx; sourceTree = "<group>"; };
+		F50DB0DD1733071C00709B17 /* csutil.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = csutil.cxx; sourceTree = "<group>"; };
+		F50DB0DE1733071C00709B17 /* csutil.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = csutil.hxx; sourceTree = "<group>"; };
+		F50DB0DF1733071C00709B17 /* dictmgr.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dictmgr.cxx; sourceTree = "<group>"; };
+		F50DB0E01733071C00709B17 /* dictmgr.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dictmgr.hxx; sourceTree = "<group>"; };
+		F50DB0E11733071C00709B17 /* filemgr.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filemgr.cxx; sourceTree = "<group>"; };
+		F50DB0E21733071C00709B17 /* filemgr.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = filemgr.hxx; sourceTree = "<group>"; };
+		F50DB0E31733071C00709B17 /* hashmgr.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hashmgr.cxx; sourceTree = "<group>"; };
+		F50DB0E41733071C00709B17 /* hashmgr.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hashmgr.hxx; sourceTree = "<group>"; };
+		F50DB0E51733071C00709B17 /* htypes.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = htypes.hxx; sourceTree = "<group>"; };
+		F50DB0E61733071C00709B17 /* hunspell.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hunspell.cxx; sourceTree = "<group>"; };
+		F50DB0E81733071C00709B17 /* hunspell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hunspell.h; sourceTree = "<group>"; };
+		F50DB0E91733071C00709B17 /* hunspell.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hunspell.hxx; sourceTree = "<group>"; };
+		F50DB0EA1733071C00709B17 /* hunvisapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hunvisapi.h; sourceTree = "<group>"; };
+		F50DB0EC1733071C00709B17 /* hunzip.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hunzip.cxx; sourceTree = "<group>"; };
+		F50DB0ED1733071C00709B17 /* hunzip.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hunzip.hxx; sourceTree = "<group>"; };
+		F50DB0EE1733071C00709B17 /* langnum.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = langnum.hxx; sourceTree = "<group>"; };
+		F50DB0F51733071C00709B17 /* phonet.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = phonet.cxx; sourceTree = "<group>"; };
+		F50DB0F61733071C00709B17 /* phonet.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = phonet.hxx; sourceTree = "<group>"; };
+		F50DB0F81733071C00709B17 /* replist.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = replist.cxx; sourceTree = "<group>"; };
+		F50DB0F91733071C00709B17 /* replist.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = replist.hxx; sourceTree = "<group>"; };
+		F50DB0FA1733071C00709B17 /* suggestmgr.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = suggestmgr.cxx; sourceTree = "<group>"; };
+		F50DB0FB1733071C00709B17 /* suggestmgr.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = suggestmgr.hxx; sourceTree = "<group>"; };
+		F50DB0FC1733071C00709B17 /* utf_info.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utf_info.cxx; sourceTree = "<group>"; };
+		F50DB0FD1733071C00709B17 /* w_char.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = w_char.hxx; sourceTree = "<group>"; };
+		F50DB15A1733132400709B17 /* Licenses */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Licenses; path = ../../Licenses; sourceTree = "<group>"; };
+		F5F4E9521732F0C900D514E8 /* Pareizrakstiba.service */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pareizrakstiba.service; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5F4E9551732F0C900D514E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F5F4E9581732F0C900D514E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F5F4E9591732F0C900D514E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F5F4E95A1732F0C900D514E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F5F4E9611732F0C900D514E8 /* Pareizrakstiba-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pareizrakstiba-Prefix.pch"; sourceTree = "<group>"; };
+		F91CCB8D1CD3824200F1CFEF /* Pareizrakstiba-Info-10.6+.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pareizrakstiba-Info-10.6+.plist"; sourceTree = "<group>"; };
+		F91CCB901CD3830B00F1CFEF /* PareizrakstibaSpellWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PareizrakstibaSpellWorker.h; sourceTree = "<group>"; };
+		F91CCB911CD3830B00F1CFEF /* PareizrakstibaSpellWorker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PareizrakstibaSpellWorker.mm; sourceTree = "<group>"; };
+		F9C4C4BB1B453F2D00813E18 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../../config.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5F4E94F1732F0C900D514E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50DB0C31732F98800709B17 /* CoreFoundation.framework in Frameworks */,
+				F5F4E9561732F0C900D514E8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F50DB0B61732F37800709B17 /* SpellServer */ = {
+			isa = PBXGroup;
+			children = (
+				F50DB0B71732F3A500709B17 /* PareizrakstibaSpellServer.h */,
+				F50DB0B81732F3A500709B17 /* PareizrakstibaSpellServer.mm */,
+			);
+			name = SpellServer;
+			sourceTree = "<group>";
+		};
+		F50DB0BA1732F51400709B17 /* SpellDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F50DB0BB1732F54100709B17 /* PareizrakstibaDelegate.h */,
+				F50DB0BC1732F54100709B17 /* PareizrakstibaDelegate.mm */,
+			);
+			name = SpellDelegate;
+			sourceTree = "<group>";
+		};
+		F50DB0C91733071C00709B17 /* hunspell */ = {
+			isa = PBXGroup;
+			children = (
+				F9C4C4BB1B453F2D00813E18 /* config.h */,
+				F50DB0D61733071C00709B17 /* affentry.cxx */,
+				F50DB0D71733071C00709B17 /* affentry.hxx */,
+				F50DB0D81733071C00709B17 /* affixmgr.cxx */,
+				F50DB0D91733071C00709B17 /* affixmgr.hxx */,
+				F50DB0DA1733071C00709B17 /* atypes.hxx */,
+				F50DB0DB1733071C00709B17 /* baseaffix.hxx */,
+				F50DB0DD1733071C00709B17 /* csutil.cxx */,
+				F50DB0DE1733071C00709B17 /* csutil.hxx */,
+				F50DB0DF1733071C00709B17 /* dictmgr.cxx */,
+				F50DB0E01733071C00709B17 /* dictmgr.hxx */,
+				F50DB0E11733071C00709B17 /* filemgr.cxx */,
+				F50DB0E21733071C00709B17 /* filemgr.hxx */,
+				F50DB0E31733071C00709B17 /* hashmgr.cxx */,
+				F50DB0E41733071C00709B17 /* hashmgr.hxx */,
+				F50DB0E51733071C00709B17 /* htypes.hxx */,
+				F50DB0E61733071C00709B17 /* hunspell.cxx */,
+				F50DB0E81733071C00709B17 /* hunspell.h */,
+				F50DB0E91733071C00709B17 /* hunspell.hxx */,
+				F50DB0EA1733071C00709B17 /* hunvisapi.h */,
+				F50DB0EC1733071C00709B17 /* hunzip.cxx */,
+				F50DB0ED1733071C00709B17 /* hunzip.hxx */,
+				F50DB0EE1733071C00709B17 /* langnum.hxx */,
+				F50DB0F51733071C00709B17 /* phonet.cxx */,
+				F50DB0F61733071C00709B17 /* phonet.hxx */,
+				F50DB0F81733071C00709B17 /* replist.cxx */,
+				F50DB0F91733071C00709B17 /* replist.hxx */,
+				F50DB0FA1733071C00709B17 /* suggestmgr.cxx */,
+				F50DB0FB1733071C00709B17 /* suggestmgr.hxx */,
+				F50DB0FC1733071C00709B17 /* utf_info.cxx */,
+				F50DB0FD1733071C00709B17 /* w_char.hxx */,
+			);
+			name = hunspell;
+			path = "../../hunspell-1.3.3/src/hunspell";
+			sourceTree = "<group>";
+		};
+		F5F4E9471732F0C800D514E8 = {
+			isa = PBXGroup;
+			children = (
+				F5F4E95B1732F0C900D514E8 /* Pareizrakstiba */,
+				F5F4E9541732F0C900D514E8 /* Frameworks */,
+				F5F4E9531732F0C900D514E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5F4E9531732F0C900D514E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5F4E9521732F0C900D514E8 /* Pareizrakstiba.service */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5F4E9541732F0C900D514E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F50DB0C21732F98800709B17 /* CoreFoundation.framework */,
+				F5F4E9551732F0C900D514E8 /* Cocoa.framework */,
+				F5F4E9571732F0C900D514E8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5F4E9571732F0C900D514E8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5F4E9581732F0C900D514E8 /* AppKit.framework */,
+				F5F4E9591732F0C900D514E8 /* CoreData.framework */,
+				F5F4E95A1732F0C900D514E8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F5F4E95B1732F0C900D514E8 /* Pareizrakstiba */ = {
+			isa = PBXGroup;
+			children = (
+				F50DB0C91733071C00709B17 /* hunspell */,
+				F50DB0B41732F32B00709B17 /* main.mm */,
+				F91CCB8F1CD3830B00F1CFEF /* SpellWorker */,
+				F50DB0BA1732F51400709B17 /* SpellDelegate */,
+				F50DB0B61732F37800709B17 /* SpellServer */,
+				F5F4E95C1732F0C900D514E8 /* Supporting Files */,
+			);
+			path = Pareizrakstiba;
+			sourceTree = "<group>";
+		};
+		F5F4E95C1732F0C900D514E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F91CCB8D1CD3824200F1CFEF /* Pareizrakstiba-Info-10.6+.plist */,
+				F50DB15A1733132400709B17 /* Licenses */,
+				F50DB0C71733002A00709B17 /* lv_LV */,
+				F50DB0C41732FCBD00709B17 /* Pareizrakstiba.icns */,
+				F5F4E9611732F0C900D514E8 /* Pareizrakstiba-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F91CCB8F1CD3830B00F1CFEF /* SpellWorker */ = {
+			isa = PBXGroup;
+			children = (
+				F91CCB901CD3830B00F1CFEF /* PareizrakstibaSpellWorker.h */,
+				F91CCB911CD3830B00F1CFEF /* PareizrakstibaSpellWorker.mm */,
+			);
+			path = SpellWorker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5F4E9511732F0C900D514E8 /* Pareizrakstiba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5F4E9641732F0C900D514E8 /* Build configuration list for PBXNativeTarget "Pareizrakstiba" */;
+			buildPhases = (
+				F5F4E94E1732F0C900D514E8 /* Sources */,
+				F5F4E94F1732F0C900D514E8 /* Frameworks */,
+				F5F4E9501732F0C900D514E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pareizrakstiba;
+			productName = Pareizrakstiba;
+			productReference = F5F4E9521732F0C900D514E8 /* Pareizrakstiba.service */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5F4E9491732F0C800D514E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = kroko;
+			};
+			buildConfigurationList = F5F4E94C1732F0C800D514E8 /* Build configuration list for PBXProject "Pareizrakstiba-10.6+-Xcode_7.3_on_10.11" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F5F4E9471732F0C800D514E8;
+			productRefGroup = F5F4E9531732F0C900D514E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5F4E9511732F0C900D514E8 /* Pareizrakstiba */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5F4E9501732F0C900D514E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50DB0C51732FCBD00709B17 /* Pareizrakstiba.icns in Resources */,
+				F50DB0C81733002A00709B17 /* lv_LV in Resources */,
+				F50DB15B1733132400709B17 /* Licenses in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5F4E94E1732F0C900D514E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50DB0B51732F32B00709B17 /* main.mm in Sources */,
+				F50DB0B91732F3A500709B17 /* PareizrakstibaSpellServer.mm in Sources */,
+				F50DB0BD1732F54100709B17 /* PareizrakstibaDelegate.mm in Sources */,
+				F50DB1091733071C00709B17 /* affentry.cxx in Sources */,
+				F50DB10A1733071C00709B17 /* affixmgr.cxx in Sources */,
+				F50DB10B1733071C00709B17 /* csutil.cxx in Sources */,
+				F50DB10C1733071C00709B17 /* dictmgr.cxx in Sources */,
+				F50DB10D1733071C00709B17 /* filemgr.cxx in Sources */,
+				F50DB10E1733071C00709B17 /* hashmgr.cxx in Sources */,
+				F50DB10F1733071C00709B17 /* hunspell.cxx in Sources */,
+				F91CCB921CD3830B00F1CFEF /* PareizrakstibaSpellWorker.mm in Sources */,
+				F50DB1121733071C00709B17 /* hunzip.cxx in Sources */,
+				F50DB1191733071C00709B17 /* phonet.cxx in Sources */,
+				F50DB11B1733071C00709B17 /* replist.cxx in Sources */,
+				F50DB11C1733071C00709B17 /* suggestmgr.cxx in Sources */,
+				F50DB11D1733071C00709B17 /* utf_info.cxx in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F5F4E9621732F0C900D514E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"DICTENCODE=0",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /Library/Services;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = service;
+			};
+			name = Debug;
+		};
+		F5F4E9631732F0C900D514E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "DICTENCODE=0";
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /Library/Services;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = service;
+			};
+			name = Release;
+		};
+		F5F4E9651732F0C900D514E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pareizrakstiba/Pareizrakstiba-Prefix.pch";
+				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.6+.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.kroko.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "./build-10.6";
+			};
+			name = Debug;
+		};
+		F5F4E9661732F0C900D514E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pareizrakstiba/Pareizrakstiba-Prefix.pch";
+				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.6+.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.kroko.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "./build-10.6";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5F4E94C1732F0C800D514E8 /* Build configuration list for PBXProject "Pareizrakstiba-10.6+-Xcode_7.3_on_10.11" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5F4E9621732F0C900D514E8 /* Debug */,
+				F5F4E9631732F0C900D514E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5F4E9641732F0C900D514E8 /* Build configuration list for PBXNativeTarget "Pareizrakstiba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5F4E9651732F0C900D514E8 /* Debug */,
+				F5F4E9661732F0C900D514E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5F4E9491732F0C800D514E8 /* Project object */;
+}
