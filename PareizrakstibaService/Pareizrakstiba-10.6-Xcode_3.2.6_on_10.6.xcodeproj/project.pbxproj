@@ -25,38 +25,15 @@
 		F50DB11C1733071C00709B17 /* suggestmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0FA1733071C00709B17 /* suggestmgr.cxx */; };
 		F50DB11D1733071C00709B17 /* utf_info.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0FC1733071C00709B17 /* utf_info.cxx */; };
 		F50DB15B1733132400709B17 /* Licenses in Resources */ = {isa = PBXBuildFile; fileRef = F50DB15A1733132400709B17 /* Licenses */; };
-		F5AC0B1D1CD37EB900C230AE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AC0B1C1CD37EB900C230AE /* CoreFoundation.framework */; };
-		F5AC0B1F1CD37EBE00C230AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AC0B1E1CD37EBE00C230AE /* Cocoa.framework */; };
-		F5AC0B211CD37EC300C230AE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AC0B201CD37EC300C230AE /* AppKit.framework */; };
-		F5AC0B231CD37ECA00C230AE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AC0B221CD37ECA00C230AE /* CoreData.framework */; };
-		F5AC0B251CD37ED400C230AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AC0B241CD37ED400C230AE /* Foundation.framework */; };
-		F5AC0B261CD37EF400C230AE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AC0B1C1CD37EB900C230AE /* CoreFoundation.framework */; };
-		F5AC0B271CD37EF800C230AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AC0B1E1CD37EBE00C230AE /* Cocoa.framework */; };
-		F5AC0B281CD37EFD00C230AE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AC0B201CD37EC300C230AE /* AppKit.framework */; };
-		F5AC0B291CD37F0100C230AE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AC0B221CD37ECA00C230AE /* CoreData.framework */; };
-		F5AC0B2A1CD37F0700C230AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AC0B241CD37ED400C230AE /* Foundation.framework */; };
-		F5B4A4CD1CD27B34003FDD4A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0B41732F32B00709B17 /* main.mm */; };
-		F5B4A4CE1CD27B34003FDD4A /* PareizrakstibaSpellServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0B81732F3A500709B17 /* PareizrakstibaSpellServer.mm */; };
-		F5B4A4CF1CD27B34003FDD4A /* PareizrakstibaDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0BC1732F54100709B17 /* PareizrakstibaDelegate.mm */; };
-		F5B4A4D11CD27B34003FDD4A /* affentry.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0D61733071C00709B17 /* affentry.cxx */; };
-		F5B4A4D21CD27B34003FDD4A /* affixmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0D81733071C00709B17 /* affixmgr.cxx */; };
-		F5B4A4D31CD27B34003FDD4A /* csutil.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0DD1733071C00709B17 /* csutil.cxx */; };
-		F5B4A4D41CD27B34003FDD4A /* dictmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0DF1733071C00709B17 /* dictmgr.cxx */; };
-		F5B4A4D51CD27B34003FDD4A /* filemgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0E11733071C00709B17 /* filemgr.cxx */; };
-		F5B4A4D61CD27B34003FDD4A /* hashmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0E31733071C00709B17 /* hashmgr.cxx */; };
-		F5B4A4D71CD27B34003FDD4A /* hunspell.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0E61733071C00709B17 /* hunspell.cxx */; };
-		F5B4A4D81CD27B34003FDD4A /* hunzip.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0EC1733071C00709B17 /* hunzip.cxx */; };
-		F5B4A4D91CD27B34003FDD4A /* phonet.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0F51733071C00709B17 /* phonet.cxx */; };
-		F5B4A4DA1CD27B34003FDD4A /* replist.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0F81733071C00709B17 /* replist.cxx */; };
-		F5B4A4DB1CD27B34003FDD4A /* suggestmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0FA1733071C00709B17 /* suggestmgr.cxx */; };
-		F5B4A4DC1CD27B34003FDD4A /* utf_info.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0FC1733071C00709B17 /* utf_info.cxx */; };
-		F5B4A4E41CD27B34003FDD4A /* Pareizrakstiba.icns in Resources */ = {isa = PBXBuildFile; fileRef = F50DB0C41732FCBD00709B17 /* Pareizrakstiba.icns */; };
-		F5B4A4E51CD27B34003FDD4A /* lv_LV in Resources */ = {isa = PBXBuildFile; fileRef = F50DB0C71733002A00709B17 /* lv_LV */; };
-		F5B4A4E61CD27B34003FDD4A /* Licenses in Resources */ = {isa = PBXBuildFile; fileRef = F50DB15A1733132400709B17 /* Licenses */; };
-		F5B4A4ED1CD27B47003FDD4A /* Pareizrakstiba-Info-10.4.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5B4A4EC1CD27B47003FDD4A /* Pareizrakstiba-Info-10.4.plist */; };
 		F5B4A4EF1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5B4A4EE1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist */; };
-		F5B4A5241CD28440003FDD4A /* PareizrakstibaSpellWorker.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5B4A5231CD28440003FDD4A /* PareizrakstibaSpellWorker.mm */; };
 		F5B4A5251CD28440003FDD4A /* PareizrakstibaSpellWorker.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5B4A5231CD28440003FDD4A /* PareizrakstibaSpellWorker.mm */; };
+		F5CFAB871CD379A00055DB03 /* Pareizrakstiba-Info-10.6.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5CFAB861CD379A00055DB03 /* Pareizrakstiba-Info-10.6.plist */; };
+		F5CFABB01CD37A250055DB03 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CFABAF1CD37A250055DB03 /* CoreFoundation.framework */; };
+		F5CFABB21CD37A350055DB03 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CFABB11CD37A350055DB03 /* CoreFoundation.framework */; };
+		F5CFABB61CD37A400055DB03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CFABB51CD37A400055DB03 /* Cocoa.framework */; };
+		F5CFABBA1CD37A460055DB03 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CFABB91CD37A460055DB03 /* AppKit.framework */; };
+		F5CFABBE1CD37A520055DB03 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CFABBD1CD37A520055DB03 /* CoreData.framework */; };
+		F5CFABC21CD37A590055DB03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CFABC11CD37A590055DB03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,43 +75,33 @@
 		F50DB0FC1733071C00709B17 /* utf_info.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utf_info.cxx; sourceTree = "<group>"; };
 		F50DB0FD1733071C00709B17 /* w_char.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = w_char.hxx; sourceTree = "<group>"; };
 		F50DB15A1733132400709B17 /* Licenses */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Licenses; path = ../../Licenses; sourceTree = "<group>"; };
-		F5AC0B1C1CD37EB900C230AE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		F5AC0B1E1CD37EBE00C230AE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		F5AC0B201CD37EC300C230AE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		F5AC0B221CD37ECA00C230AE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		F5AC0B241CD37ED400C230AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F5B4A4EA1CD27B34003FDD4A /* Pareizrakstiba.service */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pareizrakstiba.service; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B4A4EC1CD27B47003FDD4A /* Pareizrakstiba-Info-10.4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pareizrakstiba-Info-10.4.plist"; sourceTree = "<group>"; };
 		F5B4A4EE1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pareizrakstiba-Info-10.5.plist"; sourceTree = "<group>"; };
 		F5B4A5221CD28440003FDD4A /* PareizrakstibaSpellWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PareizrakstibaSpellWorker.h; sourceTree = "<group>"; };
 		F5B4A5231CD28440003FDD4A /* PareizrakstibaSpellWorker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PareizrakstibaSpellWorker.mm; sourceTree = "<group>"; };
+		F5CFAB861CD379A00055DB03 /* Pareizrakstiba-Info-10.6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pareizrakstiba-Info-10.6.plist"; sourceTree = "<group>"; };
+		F5CFABAF1CD37A250055DB03 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F5CFABB11CD37A350055DB03 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F5CFABB51CD37A400055DB03 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F5CFABB91CD37A460055DB03 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F5CFABBD1CD37A520055DB03 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F5CFABC11CD37A590055DB03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5F4E9521732F0C900D514E8 /* Pareizrakstiba.service */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pareizrakstiba.service; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F4E9611732F0C900D514E8 /* Pareizrakstiba-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pareizrakstiba-Prefix.pch"; sourceTree = "<group>"; };
 		F9C4C4BB1B453F2D00813E18 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../../config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F5B4A4DD1CD27B34003FDD4A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F5AC0B1D1CD37EB900C230AE /* CoreFoundation.framework in Frameworks */,
-				F5AC0B1F1CD37EBE00C230AE /* Cocoa.framework in Frameworks */,
-				F5AC0B211CD37EC300C230AE /* AppKit.framework in Frameworks */,
-				F5AC0B231CD37ECA00C230AE /* CoreData.framework in Frameworks */,
-				F5AC0B251CD37ED400C230AE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F5F4E94F1732F0C900D514E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5AC0B261CD37EF400C230AE /* CoreFoundation.framework in Frameworks */,
-				F5AC0B271CD37EF800C230AE /* Cocoa.framework in Frameworks */,
-				F5AC0B281CD37EFD00C230AE /* AppKit.framework in Frameworks */,
-				F5AC0B291CD37F0100C230AE /* CoreData.framework in Frameworks */,
-				F5AC0B2A1CD37F0700C230AE /* Foundation.framework in Frameworks */,
+				F5CFABB01CD37A250055DB03 /* CoreFoundation.framework in Frameworks */,
+				F5CFABB21CD37A350055DB03 /* CoreFoundation.framework in Frameworks */,
+				F5CFABB61CD37A400055DB03 /* Cocoa.framework in Frameworks */,
+				F5CFABBA1CD37A460055DB03 /* AppKit.framework in Frameworks */,
+				F5CFABBE1CD37A520055DB03 /* CoreData.framework in Frameworks */,
+				F5CFABC21CD37A590055DB03 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +174,18 @@
 			path = SpellWorker;
 			sourceTree = "<group>";
 		};
+		F5CFAB891CD379C50055DB03 /* 10.6 */ = {
+			isa = PBXGroup;
+			children = (
+				F5CFABB11CD37A350055DB03 /* CoreFoundation.framework */,
+				F5CFABB51CD37A400055DB03 /* Cocoa.framework */,
+				F5CFABB91CD37A460055DB03 /* AppKit.framework */,
+				F5CFABBD1CD37A520055DB03 /* CoreData.framework */,
+				F5CFABC11CD37A590055DB03 /* Foundation.framework */,
+			);
+			name = 10.6;
+			sourceTree = "<group>";
+		};
 		F5F4E9471732F0C800D514E8 = {
 			isa = PBXGroup;
 			children = (
@@ -220,7 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				F5F4E9521732F0C900D514E8 /* Pareizrakstiba.service */,
-				F5B4A4EA1CD27B34003FDD4A /* Pareizrakstiba.service */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,11 +206,7 @@
 		F5F4E9541732F0C900D514E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F5AC0B1C1CD37EB900C230AE /* CoreFoundation.framework */,
-				F5AC0B1E1CD37EBE00C230AE /* Cocoa.framework */,
-				F5AC0B201CD37EC300C230AE /* AppKit.framework */,
-				F5AC0B221CD37ECA00C230AE /* CoreData.framework */,
-				F5AC0B241CD37ED400C230AE /* Foundation.framework */,
+				F5CFAB891CD379C50055DB03 /* 10.6 */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -253,8 +227,9 @@
 		F5F4E95C1732F0C900D514E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F5B4A4EE1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist */,
 				F5B4A4EC1CD27B47003FDD4A /* Pareizrakstiba-Info-10.4.plist */,
+				F5B4A4EE1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist */,
+				F5CFAB861CD379A00055DB03 /* Pareizrakstiba-Info-10.6.plist */,
 				F50DB15A1733132400709B17 /* Licenses */,
 				F50DB0C71733002A00709B17 /* lv_LV */,
 				F50DB0C41732FCBD00709B17 /* Pareizrakstiba.icns */,
@@ -266,26 +241,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F5B4A4CB1CD27B34003FDD4A /* Pareizrakstiba-10.4 */ = {
+		F5F4E9511732F0C900D514E8 /* Pareizrakstiba-10.6 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F5B4A4E71CD27B34003FDD4A /* Build configuration list for PBXNativeTarget "Pareizrakstiba-10.4" */;
-			buildPhases = (
-				F5B4A4CC1CD27B34003FDD4A /* Sources */,
-				F5B4A4DD1CD27B34003FDD4A /* Frameworks */,
-				F5B4A4E31CD27B34003FDD4A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pareizrakstiba-10.4";
-			productName = Pareizrakstiba;
-			productReference = F5B4A4EA1CD27B34003FDD4A /* Pareizrakstiba.service */;
-			productType = "com.apple.product-type.bundle";
-		};
-		F5F4E9511732F0C900D514E8 /* Pareizrakstiba-10.5 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F5F4E9641732F0C900D514E8 /* Build configuration list for PBXNativeTarget "Pareizrakstiba-10.5" */;
+			buildConfigurationList = F5F4E9641732F0C900D514E8 /* Build configuration list for PBXNativeTarget "Pareizrakstiba-10.6" */;
 			buildPhases = (
 				F5F4E94E1732F0C900D514E8 /* Sources */,
 				F5F4E94F1732F0C900D514E8 /* Frameworks */,
@@ -295,7 +253,7 @@
 			);
 			dependencies = (
 			);
-			name = "Pareizrakstiba-10.5";
+			name = "Pareizrakstiba-10.6";
 			productName = Pareizrakstiba;
 			productReference = F5F4E9521732F0C900D514E8 /* Pareizrakstiba.service */;
 			productType = "com.apple.product-type.bundle";
@@ -309,8 +267,9 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = kroko;
 			};
-			buildConfigurationList = F5F4E94C1732F0C800D514E8 /* Build configuration list for PBXProject "Pareizrakstiba-10.4_10.5-Xcode_3.1.4_on_10.5" */;
+			buildConfigurationList = F5F4E94C1732F0C800D514E8 /* Build configuration list for PBXProject "Pareizrakstiba-10.6-Xcode_3.2.6_on_10.6" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -320,24 +279,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F5B4A4CB1CD27B34003FDD4A /* Pareizrakstiba-10.4 */,
-				F5F4E9511732F0C900D514E8 /* Pareizrakstiba-10.5 */,
+				F5F4E9511732F0C900D514E8 /* Pareizrakstiba-10.6 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F5B4A4E31CD27B34003FDD4A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F5B4A4E41CD27B34003FDD4A /* Pareizrakstiba.icns in Resources */,
-				F5B4A4E51CD27B34003FDD4A /* lv_LV in Resources */,
-				F5B4A4E61CD27B34003FDD4A /* Licenses in Resources */,
-				F5B4A4ED1CD27B47003FDD4A /* Pareizrakstiba-Info-10.4.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F5F4E9501732F0C900D514E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,35 +293,13 @@
 				F50DB0C81733002A00709B17 /* lv_LV in Resources */,
 				F50DB15B1733132400709B17 /* Licenses in Resources */,
 				F5B4A4EF1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist in Resources */,
+				F5CFAB871CD379A00055DB03 /* Pareizrakstiba-Info-10.6.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F5B4A4CC1CD27B34003FDD4A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F5B4A4CD1CD27B34003FDD4A /* main.mm in Sources */,
-				F5B4A4CE1CD27B34003FDD4A /* PareizrakstibaSpellServer.mm in Sources */,
-				F5B4A4CF1CD27B34003FDD4A /* PareizrakstibaDelegate.mm in Sources */,
-				F5B4A4D11CD27B34003FDD4A /* affentry.cxx in Sources */,
-				F5B4A4D21CD27B34003FDD4A /* affixmgr.cxx in Sources */,
-				F5B4A4D31CD27B34003FDD4A /* csutil.cxx in Sources */,
-				F5B4A4D41CD27B34003FDD4A /* dictmgr.cxx in Sources */,
-				F5B4A4D51CD27B34003FDD4A /* filemgr.cxx in Sources */,
-				F5B4A4D61CD27B34003FDD4A /* hashmgr.cxx in Sources */,
-				F5B4A4D71CD27B34003FDD4A /* hunspell.cxx in Sources */,
-				F5B4A4D81CD27B34003FDD4A /* hunzip.cxx in Sources */,
-				F5B4A4D91CD27B34003FDD4A /* phonet.cxx in Sources */,
-				F5B4A4DA1CD27B34003FDD4A /* replist.cxx in Sources */,
-				F5B4A4DB1CD27B34003FDD4A /* suggestmgr.cxx in Sources */,
-				F5B4A4DC1CD27B34003FDD4A /* utf_info.cxx in Sources */,
-				F5B4A5241CD28440003FDD4A /* PareizrakstibaSpellWorker.mm in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F5F4E94E1732F0C900D514E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,37 +326,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F5B4A4E81CD27B34003FDD4A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.4.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = macosx10.4;
-				SYMROOT = "./build-10.4";
-			};
-			name = Debug;
-		};
-		F5B4A4E91CD27B34003FDD4A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.4.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = macosx10.4;
-				SYMROOT = "./build-10.4";
-			};
-			name = Release;
-		};
 		F5F4E9621732F0C900D514E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(NATIVE_ARCH)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -442,7 +341,6 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = "Pareizrakstiba/Pareizrakstiba-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -456,12 +354,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = /Library/Services;
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = Pareizrakstiba;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 				SYMROOT = ./build;
-				VALID_ARCHS = "i386 ppc ppc64 ppc7400 x86_64";
+				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = service;
 			};
 			name = Debug;
@@ -480,17 +376,14 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PREFIX_HEADER = "Pareizrakstiba/Pareizrakstiba-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "DICTENCODE=0";
 				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INSTALL_PATH = /Library/Services;
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PRODUCT_NAME = Pareizrakstiba;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx10.5;
 				SYMROOT = ./build;
 				VALID_ARCHS = "i386 ppc ppc64 ppc7400 x86_64";
@@ -501,13 +394,13 @@
 		F5F4E9651732F0C900D514E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.5.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				SDKROOT = macosx10.5;
-				SYMROOT = "./build-10.5";
+				GCC_PREFIX_HEADER = "Pareizrakstiba/Pareizrakstiba-Prefix.pch";
+				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.6.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = Pareizrakstiba;
+				SYMROOT = "./build-10.6";
 			};
 			name = Debug;
 		};
@@ -517,8 +410,11 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pareizrakstiba/Pareizrakstiba-Prefix.pch";
 				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.5.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Services";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = Pareizrakstiba;
 				SDKROOT = macosx10.5;
 				SYMROOT = "./build-10.5";
 			};
@@ -527,16 +423,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F5B4A4E71CD27B34003FDD4A /* Build configuration list for PBXNativeTarget "Pareizrakstiba-10.4" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F5B4A4E81CD27B34003FDD4A /* Debug */,
-				F5B4A4E91CD27B34003FDD4A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F5F4E94C1732F0C800D514E8 /* Build configuration list for PBXProject "Pareizrakstiba-10.4_10.5-Xcode_3.1.4_on_10.5" */ = {
+		F5F4E94C1732F0C800D514E8 /* Build configuration list for PBXProject "Pareizrakstiba-10.6-Xcode_3.2.6_on_10.6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F5F4E9621732F0C900D514E8 /* Debug */,
@@ -545,7 +432,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F5F4E9641732F0C900D514E8 /* Build configuration list for PBXNativeTarget "Pareizrakstiba-10.5" */ = {
+		F5F4E9641732F0C900D514E8 /* Build configuration list for PBXNativeTarget "Pareizrakstiba-10.6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F5F4E9651732F0C900D514E8 /* Debug */,
