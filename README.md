@@ -2,7 +2,7 @@ Pareizrakstība. Latvian spellcheck for OS X.
 ===
 
 
--> ![Pareizrakstiba](Installer/Resources/images/IMG/Pareizrakstiba.png?raw=true "Pareizrakstiba") <-
+![Pareizrakstiba](Installer/Resources/images/IMG/Pareizrakstiba.png?raw=true "Pareizrakstiba")
 
 
 Mac OS X & OS X service that adds support for system wide spellchecking in Latvian language.
