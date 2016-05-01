@@ -1,17 +1,127 @@
+Pareizrakstība. Latvian spellcheck for OS X.
+===
 
-This is for OS X 10.7+. Source of the old releases for 10.4-10.6, PPC, UB, Intel, 36&64 bit are not and will not be posted here. All the old binaries and installers however are still available at the project site for download, thus you're not lost if still using some old PPC beast.
 
-////////////////////////////////////////////////////
+-> ![Pareizrakstiba](Installer/Resources/images/IMG/Pareizrakstiba.png?raw=true "Pareizrakstiba") <-
+
+
+Mac OS X & OS X service that adds support for system wide spellchecking in Latvian language.
+Supported OS versions
+
+* 10.4 32-bit PPC & 32-bit Intel (Universal binary)
+* 10.5 32/64-bit PPC & 32/64-bit Intel (Universal binary)
+* 10.6+ 32/64-bit Intel
+* .. currently up to 10.11 included
+
+*PPC support is kept. The PPC compatible versions should [support even G3](http://www.everymac.com/systems/by_capability/maximum-macos-supported.html). 10.4 version is tuned for G3, 10.5. version is tuned for G4. G5 supported in both cases and should run in 64 bit mode.*
+
+
+---
+
+###Building
+
+*We have a test rig using two Macs that have all OSes (10.4.-10.7 & 10.8-10.11) as OS X services are really messy. Not so much SpellServerDelegate itself, more the installation packages pre&postflights, how [pbs](x-man-page://pbs) misbehaves, we try to deploy user friendly packages.*
+
+Use Xcode 3.1.4 on OS X 10.5 Leopard for building 10.4 32bit Universal binary and 10.5-10.6 32/64bit Universal binary targets. *Note: One cannot use Xcode 3.2.3 on OS X 10.6 Snow Leopard for 10.4, 10.5, 10.6, because it is incapable of building PPC (UB).* Deploy the binary that is built against 10.5 SDK in 10.6.
+
+```
+build-10.4_10.5-to-10.6-debug.shbuild-10.4_10.5-to-10.6-release.sh
+```
+
+Use Xcode 7.3+ for building and signing 10.7+ 32/64bit Intel target.
+
+```build-10.7+-debug.shbuild-10.7+-release.sh
+```
+
+The above strategy was chosen by jiggling needs for UB, which Xcode has which SDKs, changes in OS API, Gatekeeper that was introduced in 10.7.5 and the stupid idea that we will spend money on signing the package starting v4+, a.o.
+
+Notes (os version :: latest release :: newest Xcode on the platform that has good backwards SDK coverage)
+
+* Mac OS X Tiger :: 10.4.11 / November 14, 2007 :: Xcode 2.5
+* Mac OS X Leopard (last one supporting Power PC)  :: 10.5.8 (Build 9L31a)[1] / August 13, 2009 :: Xcode 3.1.4
+* Mac OS X Snow Leopard (last one, that can run Universal linaries (select Intel part from it) :: 10.6.8 v1.1 (Build 10K549) / July 25, 2011 :: Xcode 3.2.6
+* Mac OS X Lion :: 10.7.5 (Build 11G63) / October 4, 2012 :: Xcode 4.3.3 (Xcode 4.6.3 includes 10.8 SDK, but drops 10.6)
+* OS X Mountain Lion :: 10.8.5 (Build 12F45) / October 3, 2013 :: Xcode 5.0.2
+* OS X Mavericks :: 10.9.5 (Build 13F1712) / March 21, 2016 :: Xcode 6.2 & command line tools
+* OS X Yosemite :: 10.10.5 (Build 14F27)[1] / August 13, 2015 :: Xcode 7.2.1 & command line tools
+* OS X El Capitan :: Current OS :: Xcode 7.3+ & command line tools
+
+
+---
+
+###Version history
+
+* v4.0
+    * 30.04.2016.
+    * Package is now signed using WARP $$$. Pareizrakstiba is downloaded over 20k times but only 6 or so people have said thanks. You're welcome.
+    * Revised building system for all supported versions.
+    * Separate builds for 10.4, 10.5-10.6, 10.7+
+    * Using Latvian affix table v.1.2.0. (24.01.2016.).
+    * Using Hunspell 1.3.3. (02.06.2014.). Hunspell has moved to Github and bumped it's version as well as added new release. But the issue count is worrying, so we're playing safe.
+
+* v3.2
+    * 02.07.2015.
+    * A version for Mac OS X 10.10+ (64-bit) created.
+    * Built w/ deployment target 10.9, so it should work also from 10.9.
+    * However v3.1 is still suggested for OS X 10.7 to 10.9.
+    * Beta as it is not certified and code signed.
+    * Using Latvian affix table v.1.1.0. (21.05.2015.).
+    * Using Hunspell 1.3.3. (02.06.2014.).
+
+* v3.1
+    * 03.05.2013.
+    * A version for Mac OS X 10.7+ (32 & 64-bit) created.
+    * Beta as it is not certified and code signed.
+    * Using Latvian affix table v.0.9.6. (15.04.2013.).
+    * Using Hunspell 1.3.2. (16.02.2011.).
+
+* v3.01
+    * 16.05.2010.
+    * Solved problem where Pareizraktība crashes if user checks text that contains characters
+that cannot be loslessly converted to ISO8859-13 character set.
+
+* v3.0
+    * 19.04.2010.
+    * A version for Mac OS 10.6 (32 & 64-bit) created.
+    * Rewrite for OS 10.4 and 10.5.
+    * Using Latvian affix table v.0.9.1. (22.04.2010.).
+    * Using Hunspell 1.2.9. (03.03.2010.).
+    * Enabled autocomplete. Possible word completions can be called by pressing ESC key.
+    * Various enhancements in the code.
+    * Releasing a preference pane System Preferences : Pareizrakstība that gives user ability to set various options for spellchecking has been postponed.
+
+* v2.1
+    * 10.05.2008.
+    * Solved issue with Mac OS 10.4.
+
+* v2.0
+    * 10.05.2008.
+    * Solved issue with iWork '08.
+    * Pareizrakstība now registers without vendor name.
+
+* v.1.1
+    * 01.04.2008.
+    * First public version.
+    * Finished documentation.
+
+* v1.0
+    * 31.03.2008.
+    * Test version.
+    * Latviešu valodas pareizrakstības pārbaudes bibliotēka- v.0.7.3 2008-02-22 © Jānis Eisaks.
+	
+---
+
 
 Latvian Spellcheck
 
-Mac OSX service that adds support for system
-wide spellchecking in Latvian language.
+Mac OSX service that adds support for systemwide spellchecking in Latvian language.
 
 Requirements
 
-Mac OS 10.7.+ Intel 32 & 64-bit
-Beta release
+Mac OS 10.4 Intel or PPC 32-bit
+Mac OS 10.5 Intel or PPC 32/64-bit
+Mac OS 10.6 Intel 32/64-bit
+Mac OS 10.7+ Intel 32 & 64-bit
 
 Installation
 

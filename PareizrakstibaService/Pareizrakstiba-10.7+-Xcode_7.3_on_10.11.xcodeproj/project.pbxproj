@@ -347,7 +347,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Pareizrakstiba;
 				SDKROOT = macosx;
-				SYMROOT = ./build;
+				SYMROOT = "./build-10.7+";
 				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = service;
 			};
@@ -378,7 +378,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = Pareizrakstiba;
 				SDKROOT = macosx;
-				SYMROOT = ./build;
+				SYMROOT = "./build-10.7+";
 				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = service;
 			};
@@ -391,7 +391,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pareizrakstiba/Pareizrakstiba-Prefix.pch";
 				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.7+.plist";
-				SYMROOT = "./build-10.7+";
 			};
 			name = Debug;
 		};
@@ -402,7 +401,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pareizrakstiba/Pareizrakstiba-Prefix.pch";
 				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.7+.plist";
-				SYMROOT = "./build-10.7+";
 			};
 			name = Release;
 		};
