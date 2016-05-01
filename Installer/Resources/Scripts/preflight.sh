@@ -13,27 +13,8 @@ SYSVER_MIN="${SYSVER_MIN%%.*}"
 sudo killall Pareizrakstiba > /dev/null 2>&1
 sudo rm -rf /Library/Services/Pareizrakstiba.service
 
-# Flush Services
-PBS="/System/Library/CoreServices/pbs"
-if [ -f $PBS ] && [ $SYSVER_MIN -gt "4" ];
-then
-   sudo killall "System Preferences" > /dev/null 2>&1
-   /System/Library/CoreServices/pbs -flush > /dev/null 2>&1
-   /System/Library/CoreServices/pbs -update > /dev/null 2>&1
-fi
-
 # Make Services dir if not exists
 sudo mkdir -p /Library/Services/
-
-# Set permissions based on OS version
-if [ $SYSVER_MIN -gt "6" ];
-then
-sudo chown -R root:wheel /Library/Services/
-sudo chmod -R 755 /Library/Services/
-else
-sudo chown -R root:admin /Library/Services/
-sudo chmod -R 775 /Library/Services/
-fi
 
 # Remove Pareizrakstiba installer stuff
 sudo rm -rf /Library/Application\ Support/Pareizrakstiba
