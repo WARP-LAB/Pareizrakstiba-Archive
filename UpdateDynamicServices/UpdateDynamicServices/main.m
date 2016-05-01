@@ -12,10 +12,12 @@
 
 int main(int argc, const char * argv[])
 {
-    @autoreleasepool {
+	NSAutoreleasePool *autoreleasepool= [[NSAutoreleasePool alloc] init];
+    //@autoreleasepool {
         fprintf(stdout, "NSUpdateDynamicServices was called\n");
         NSUpdateDynamicServices();
-    }
+    //}
+	[autoreleasepool release];
     return 0;
 }
 

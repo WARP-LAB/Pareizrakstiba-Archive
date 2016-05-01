@@ -10,7 +10,7 @@
 #BuildVersion: 9M2809
 
 cd "$( dirname "${BASH_SOURCE[0]}" )"
-XCODEPROJ="Pareizrakstiba-10.4_10.5-Xcode_3.1.4_on_10.5.xcodeproj"
+XCODEPROJ="Pareizrakstiba-10.6-Xcode_3.2.6_on_10.6.xcodeproj"
 
-xcrun xcodebuild -project "${XCODEPROJ}" -target Pareizrakstiba-10.4 -sdk macosx10.4 -configuration Release clean build $@
-xcrun xcodebuild -project "${XCODEPROJ}" -target Pareizrakstiba-10.5 -sdk macosx10.5 -configuration Release clean build $@
+xcrun xcodebuild -project "${XCODEPROJ}" -target Pareizrakstiba-10.6 -sdk macosx10.6 -configuration Release clean build $@
+

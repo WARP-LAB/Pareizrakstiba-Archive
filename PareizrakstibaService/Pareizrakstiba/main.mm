@@ -27,7 +27,11 @@ int main()
 {
     NSAutoreleasePool *autoreleasepool= [[NSAutoreleasePool alloc] init];
 	PareizrakstibaSpellServer *pareizrakstibaSpellServer = [[PareizrakstibaSpellServer alloc] init];
-	if ([pareizrakstibaSpellServer registerLanguage:@"lv" byVendor:@"Apple"])
+#if MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_4
+	if ([pareizrakstibaSpellServer registerLanguage:@"Latvian" byVendor:@"Apple"])
+#else
+	if ([pareizrakstibaSpellServer registerLanguage:@"lv" byVendor:@"Apple"])	
+#endif
 	{
 		[pareizrakstibaSpellServer setDelegate:[[[PareizrakstibaDelegate alloc] init] autorelease]];
 		[pareizrakstibaSpellServer run];

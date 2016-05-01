@@ -406,6 +406,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_MODEL_TUNING = G3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.4.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
@@ -419,6 +420,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_MODEL_TUNING = G3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.4.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
@@ -461,7 +463,7 @@
 				PRODUCT_NAME = Pareizrakstiba;
 				SDKROOT = macosx10.5;
 				SYMROOT = ./build;
-				VALID_ARCHS = "i386 ppc ppc64 ppc7400 x86_64";
+				VALID_ARCHS = "i386 ppc ppc64 ppc7400 ppc970 x86_64";
 				WRAPPER_EXTENSION = service;
 			};
 			name = Debug;
@@ -493,7 +495,7 @@
 				PRODUCT_NAME = Pareizrakstiba;
 				SDKROOT = macosx10.5;
 				SYMROOT = ./build;
-				VALID_ARCHS = "i386 ppc ppc64 ppc7400 x86_64";
+				VALID_ARCHS = "i386 ppc ppc64 ppc7400 ppc970 x86_64";
 				WRAPPER_EXTENSION = service;
 			};
 			name = Release;

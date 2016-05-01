@@ -25,10 +25,8 @@
 		F50DB11C1733071C00709B17 /* suggestmgr.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0FA1733071C00709B17 /* suggestmgr.cxx */; };
 		F50DB11D1733071C00709B17 /* utf_info.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F50DB0FC1733071C00709B17 /* utf_info.cxx */; };
 		F50DB15B1733132400709B17 /* Licenses in Resources */ = {isa = PBXBuildFile; fileRef = F50DB15A1733132400709B17 /* Licenses */; };
-		F5B4A4EF1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5B4A4EE1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist */; };
 		F5B4A5251CD28440003FDD4A /* PareizrakstibaSpellWorker.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5B4A5231CD28440003FDD4A /* PareizrakstibaSpellWorker.mm */; };
 		F5CFAB871CD379A00055DB03 /* Pareizrakstiba-Info-10.6.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5CFAB861CD379A00055DB03 /* Pareizrakstiba-Info-10.6.plist */; };
-		F5CFABB01CD37A250055DB03 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CFABAF1CD37A250055DB03 /* CoreFoundation.framework */; };
 		F5CFABB21CD37A350055DB03 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CFABB11CD37A350055DB03 /* CoreFoundation.framework */; };
 		F5CFABB61CD37A400055DB03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CFABB51CD37A400055DB03 /* Cocoa.framework */; };
 		F5CFABBA1CD37A460055DB03 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CFABB91CD37A460055DB03 /* AppKit.framework */; };
@@ -75,12 +73,9 @@
 		F50DB0FC1733071C00709B17 /* utf_info.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utf_info.cxx; sourceTree = "<group>"; };
 		F50DB0FD1733071C00709B17 /* w_char.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = w_char.hxx; sourceTree = "<group>"; };
 		F50DB15A1733132400709B17 /* Licenses */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Licenses; path = ../../Licenses; sourceTree = "<group>"; };
-		F5B4A4EC1CD27B47003FDD4A /* Pareizrakstiba-Info-10.4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pareizrakstiba-Info-10.4.plist"; sourceTree = "<group>"; };
-		F5B4A4EE1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pareizrakstiba-Info-10.5.plist"; sourceTree = "<group>"; };
 		F5B4A5221CD28440003FDD4A /* PareizrakstibaSpellWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PareizrakstibaSpellWorker.h; sourceTree = "<group>"; };
 		F5B4A5231CD28440003FDD4A /* PareizrakstibaSpellWorker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PareizrakstibaSpellWorker.mm; sourceTree = "<group>"; };
 		F5CFAB861CD379A00055DB03 /* Pareizrakstiba-Info-10.6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pareizrakstiba-Info-10.6.plist"; sourceTree = "<group>"; };
-		F5CFABAF1CD37A250055DB03 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		F5CFABB11CD37A350055DB03 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		F5CFABB51CD37A400055DB03 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F5CFABB91CD37A460055DB03 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -96,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5CFABB01CD37A250055DB03 /* CoreFoundation.framework in Frameworks */,
 				F5CFABB21CD37A350055DB03 /* CoreFoundation.framework in Frameworks */,
 				F5CFABB61CD37A400055DB03 /* Cocoa.framework in Frameworks */,
 				F5CFABBA1CD37A460055DB03 /* AppKit.framework in Frameworks */,
@@ -227,8 +221,6 @@
 		F5F4E95C1732F0C900D514E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F5B4A4EC1CD27B47003FDD4A /* Pareizrakstiba-Info-10.4.plist */,
-				F5B4A4EE1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist */,
 				F5CFAB861CD379A00055DB03 /* Pareizrakstiba-Info-10.6.plist */,
 				F50DB15A1733132400709B17 /* Licenses */,
 				F50DB0C71733002A00709B17 /* lv_LV */,
@@ -292,7 +284,6 @@
 				F50DB0C51732FCBD00709B17 /* Pareizrakstiba.icns in Resources */,
 				F50DB0C81733002A00709B17 /* lv_LV in Resources */,
 				F50DB15B1733132400709B17 /* Licenses in Resources */,
-				F5B4A4EF1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist in Resources */,
 				F5CFAB871CD379A00055DB03 /* Pareizrakstiba-Info-10.6.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +345,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = /Library/Services;
 				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = Pareizrakstiba;
 				SDKROOT = macosx10.6;
 				SYMROOT = ./build;
 				VALID_ARCHS = "i386 x86_64";
@@ -366,7 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(NATIVE_ARCH)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -382,11 +375,13 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /Library/Services;
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				SDKROOT = macosx10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = Pareizrakstiba;
+				SDKROOT = macosx10.6;
 				SYMROOT = ./build;
-				VALID_ARCHS = "i386 ppc ppc64 ppc7400 x86_64";
+				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = service;
 			};
 			name = Release;
@@ -398,8 +393,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pareizrakstiba/Pareizrakstiba-Prefix.pch";
 				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.6.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = Pareizrakstiba;
 				SYMROOT = "./build-10.6";
 			};
 			name = Debug;
@@ -407,16 +400,11 @@
 		F5F4E9661732F0C900D514E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pareizrakstiba/Pareizrakstiba-Prefix.pch";
-				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.5.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Services";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PRODUCT_NAME = Pareizrakstiba;
-				SDKROOT = macosx10.5;
-				SYMROOT = "./build-10.5";
+				INFOPLIST_FILE = "Pareizrakstiba/Pareizrakstiba-Info-10.6.plist";
+				SYMROOT = "./build-10.6";
 			};
 			name = Release;
 		};

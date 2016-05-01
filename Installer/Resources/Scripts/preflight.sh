@@ -15,9 +15,11 @@ sudo rm -rf /Library/Services/Pareizrakstiba.service
 
 # Flush Services
 PBS="/System/Library/CoreServices/pbs"
-if [ -f $PBS ];
+if [ -f $PBS ] && [ $SYSVER_MIN -gt "4" ];
 then
-   /System/Library/CoreServices/pbs -flush
+   sudo killall "System Preferences" > /dev/null 2>&1
+   /System/Library/CoreServices/pbs -flush > /dev/null 2>&1
+   /System/Library/CoreServices/pbs -update > /dev/null 2>&1
 fi
 
 # Make Services dir if not exists
