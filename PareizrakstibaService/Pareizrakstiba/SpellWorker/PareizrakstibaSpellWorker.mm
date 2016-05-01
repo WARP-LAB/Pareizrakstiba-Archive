@@ -120,7 +120,7 @@ struct EncodingMapping {
 	// for 10.4
 	// if our scanner failed to return range, then simply return {0x7fffffff,0} range
 	return NSMakeRange (NSNotFound, 0); 
-#elseif MAC_OS_X_VERSION_MAX_ALLOWED == MAC_OS_X_VERSION_10_5
+#elif MAC_OS_X_VERSION_MAX_ALLOWED == MAC_OS_X_VERSION_10_5
 	// In OS 10.5 and up NSNotFound is defined as NSIntegerMax (prior it was 0x7fffffff). So basically need for these macros arises whether user's running 32 or 64 bit environment.
 	// Thus- compiling Pareizrakstība as 64-bit, will give NSNotFound==LONG_MAX, however apps utilising OSX spell server CAN expect INT_MAX (which is a system bug).
 	// Therefore a warning is rised
