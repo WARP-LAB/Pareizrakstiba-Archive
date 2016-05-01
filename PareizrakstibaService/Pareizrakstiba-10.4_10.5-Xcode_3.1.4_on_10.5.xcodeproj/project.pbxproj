@@ -53,8 +53,6 @@
 		F5B4A4E41CD27B34003FDD4A /* Pareizrakstiba.icns in Resources */ = {isa = PBXBuildFile; fileRef = F50DB0C41732FCBD00709B17 /* Pareizrakstiba.icns */; };
 		F5B4A4E51CD27B34003FDD4A /* lv_LV in Resources */ = {isa = PBXBuildFile; fileRef = F50DB0C71733002A00709B17 /* lv_LV */; };
 		F5B4A4E61CD27B34003FDD4A /* Licenses in Resources */ = {isa = PBXBuildFile; fileRef = F50DB15A1733132400709B17 /* Licenses */; };
-		F5B4A4ED1CD27B47003FDD4A /* Pareizrakstiba-Info-10.4.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5B4A4EC1CD27B47003FDD4A /* Pareizrakstiba-Info-10.4.plist */; };
-		F5B4A4EF1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5B4A4EE1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist */; };
 		F5B4A5241CD28440003FDD4A /* PareizrakstibaSpellWorker.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5B4A5231CD28440003FDD4A /* PareizrakstibaSpellWorker.mm */; };
 		F5B4A5251CD28440003FDD4A /* PareizrakstibaSpellWorker.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5B4A5231CD28440003FDD4A /* PareizrakstibaSpellWorker.mm */; };
 /* End PBXBuildFile section */
@@ -334,7 +332,6 @@
 				F5B4A4E41CD27B34003FDD4A /* Pareizrakstiba.icns in Resources */,
 				F5B4A4E51CD27B34003FDD4A /* lv_LV in Resources */,
 				F5B4A4E61CD27B34003FDD4A /* Licenses in Resources */,
-				F5B4A4ED1CD27B47003FDD4A /* Pareizrakstiba-Info-10.4.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +342,6 @@
 				F50DB0C51732FCBD00709B17 /* Pareizrakstiba.icns in Resources */,
 				F50DB0C81733002A00709B17 /* lv_LV in Resources */,
 				F50DB15B1733132400709B17 /* Licenses in Resources */,
-				F5B4A4EF1CD27B52003FDD4A /* Pareizrakstiba-Info-10.5.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

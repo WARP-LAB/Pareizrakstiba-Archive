@@ -26,15 +26,41 @@
 int main()
 {
     NSAutoreleasePool *autoreleasepool= [[NSAutoreleasePool alloc] init];
-	PareizrakstibaSpellServer *pareizrakstibaSpellServer = [[PareizrakstibaSpellServer alloc] init];
+
+	PareizrakstibaSpellServer *pareizrakstibaSpellServer = [[[PareizrakstibaSpellServer alloc] init] autorelease];
+	PareizrakstibaDelegate *pareizrakstibaSpellServerDelegate = [[[PareizrakstibaDelegate alloc] init] autorelease];
+	
+	// We handle only one language so we store it in string
+	// Otherwise our delegate could have mutable array having multiple languages
 #if MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_4
-	if ([pareizrakstibaSpellServer registerLanguage:@"Latvian" byVendor:@"Apple"])
+	[pareizrakstibaSpellServerDelegate setLanguageHandled:@"Latvian"];
 #else
-	if ([pareizrakstibaSpellServer registerLanguage:@"lv" byVendor:@"Apple"])	
+	[pareizrakstibaSpellServerDelegate setLanguageHandled:@"lv"];
 #endif
+	
+	NSLog(@"Pareizrakstiba 4.0 Copyright (C) 2008-2016 kroko / Reinis Adovics\n");
+	
+#ifdef DEBUG
+
+	NSLog(@"Pareizrakstiba: handle language: %@\n", [pareizrakstibaSpellServerDelegate getLanguageHandled]);
+
+#if __LP64__
+	NSLog(@"Pareizrakstiba 64-bit\n");
+#else
+	NSLog(@"Pareizrakstiba 32-bit\n");
+#endif
+
+#if NS_BUILD_32_LIKE_64
+	NSLog(@"Pareizrakstiba NS_BUILD_32_LIKE_64\n");
+#endif
+
+#endif
+
+	if ([pareizrakstibaSpellServer registerLanguage:[pareizrakstibaSpellServerDelegate getLanguageHandled] byVendor:@"Apple"])
 	{
-		[pareizrakstibaSpellServer setDelegate:[[[PareizrakstibaDelegate alloc] init] autorelease]];
+		[pareizrakstibaSpellServer setDelegate:pareizrakstibaSpellServerDelegate];
 		[pareizrakstibaSpellServer run];
+		fprintf(stderr, "Pareizrakstiba: Unexpected death of Pareizrakstiba!\n");
 	} else {
 		fprintf(stderr, "Pareizrakstiba: NSSpellServer unable to register Latvian language.\n");
 	}

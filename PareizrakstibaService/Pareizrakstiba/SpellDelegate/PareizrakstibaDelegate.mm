@@ -38,6 +38,27 @@
     [super dealloc];
 }
 
+- (void) setLanguageHandled:(NSString *)language
+{
+#ifdef DEBUG
+	NSLog(@"languageToHandle: %@\n", languageToHandle);
+#endif
+	languageToHandle = [[NSString alloc] initWithString:language];
+}
+
+- (NSString *) getLanguageHandled
+{
+	return languageToHandle;
+}
+
+- (BOOL) isLanguageHandled:(NSString *)language
+{
+#ifdef DEBUG
+	NSLog(@"spell server delagate handlesLanguage? %@\n", language);
+#endif
+	return ( NSOrderedSame == [languageToHandle caseInsensitiveCompare:language] );
+}
+
 // Search for a misspelled word in a given string
 - (NSRange)spellServer:(NSSpellServer *)sender findMisspelledWordInString:(NSString *)stringToCheck language:(NSString *)language wordCount:(NSInteger *)wordCount countOnly:(BOOL)countOnly
 {

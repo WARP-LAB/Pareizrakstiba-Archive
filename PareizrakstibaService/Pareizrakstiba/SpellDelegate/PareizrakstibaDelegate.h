@@ -27,18 +27,24 @@
  Seperate class for spelling, rather than putting code right here into instance methods.
  So grammar could be easily "modally" added later.
  */
-#if MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_5
+
 @protocol NSSpellServerDelegate; // Force preprocess NSSpellServerDelegate protocol before PareizrakstibaDelegate interface
-#endif
 @class	PareizrakstibaSpellWorker; // Spelling checker class
 
-// Until 10.6 NSSpellServerDelegate is informal protocol
+// Prior 10.6 NSSpellServerDelegate is informal protocol
 @interface PareizrakstibaDelegate : NSObject <NSSpellServerDelegate> {
     PareizrakstibaSpellWorker *mySC;
+	NSString* languageToHandle;
 }
 // construct/deconstruct
 - (id)init;
 - (void) dealloc;
+
+////////////////////////////////////
+// EXTRAS
+- (void) setLanguageHandled:(NSString *)language;
+- (NSString *) getLanguageHandled;
+- (BOOL) isLanguageHandled:(NSString *)language;
 
 ////////////////////////////////////
 // IMPLEMENTED

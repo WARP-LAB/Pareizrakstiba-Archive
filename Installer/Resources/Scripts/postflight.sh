@@ -23,6 +23,7 @@ sudo chown -R root:admin /Library/Services/
 sudo chmod -R 775 /Library/Services/
 fi
 
+# Kill Pareizrakstiba if running
 sudo killall Pareizrakstiba > /dev/null 2>&1
 
 # Flush Services
@@ -39,7 +40,6 @@ then
 syslog -s -l notice "Pareizrakstiba installer: Postflight: Launching Pareizrakstiba on fly 10.5+"
 sudo -u $CONSOLE_USER /usr/bin/open -n /Library/Services/Pareizrakstiba.service
 fi
-
 
 # starting 10.6 we have automatic language detection
 # which does not work, see https://www.mail-archive.com/cocoa-dev@lists.apple.com/msg46316.html

@@ -9,9 +9,33 @@ SYSVER_MIN="${SYSVER#*.}"
 # minor
 SYSVER_MIN="${SYSVER_MIN%%.*}"
 
+CONSOLE_USER=$(ps aux | grep console | grep -v grep | cut -d' ' -f1)
+
 # Kill Pareizrakstiba if running
+syslog -s -l notice "Pareizrakstiba installer: Preflight: Killing and removing previous Pareizrakstiba if exists"
 sudo killall Pareizrakstiba > /dev/null 2>&1
 sudo rm -rf /Library/Services/Pareizrakstiba.service
+
+# Reset preferred language to US English
+if [ $SYSVER_MIN -gt "4" ];
+then
+syslog -s -l notice "Pareizrakstiba installer: Preflight: Set preffered language 10.5+ back to EN"
+defaults write -g NSPreferredSpellServerLanguage 'en_US' > /dev/null 2>&1
+sudo -u $CONSOLE_USER defaults write -g NSPreferredSpellServerLanguage 'en_US' 2>&1
+else
+syslog -s -l notice "Pareizrakstiba installer: Preflight: Set preffered language 10.4 back to EN"
+defaults write -g NSPreferredSpellServerLanguage 'en_US' > /dev/null 2>&1
+sudo -u $CONSOLE_USER defaults write -g NSPreferredSpellServerLanguage 'en_US' 2>&1
+fi
+
+# Flush Services
+PBS="/System/Library/CoreServices/pbs"
+if [ -f $PBS ] && [ $SYSVER_MIN -gt "4" ];
+then
+sudo killall "System Preferences" > /dev/null 2>&1
+/System/Library/CoreServices/pbs -flush > /dev/null 2>&1
+/System/Library/CoreServices/pbs -update > /dev/null 2>&1
+fi
 
 # Make Services dir if not exists
 sudo mkdir -p /Library/Services/
