@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string>Pareizrakstiba.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>me.kroko.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>4.0</string>
+	<key>CFBundleSignature</key>
+	<string>krko</string>
+	<key>CFBundleVersion</key>
+	<string>4.0</string>
+	<key>LSBackgroundOnly</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2008-2016 kroko / Reinis Adovics</string>
+	<key>NSPrincipalClass</key>
+	<string>PareizrakstibaDelegate</string>
+	<key>NSServices</key>
+	<array>
+		<dict>
+			<key>NSExecutable</key>
+			<string>Pareizrakstiba</string>
+			<key>NSLanguages</key>
+			<array>
+				<string>lv</string>
+			</array>
+			<key>NSPortName</key>
+			<string>Pareizrakstiba</string>
+			<key>NSSpellChecker</key>
+			<string>Apple</string>
+		</dict>
+	</array>
+</dict>
+</plist>
