@@ -45,6 +45,19 @@ Notes *(os version :: latest release :: newest Xcode on the platform that has go
 
 *Test rig uses two Macs that have all OSes (10.4.-10.7 on MacBookPro2,2 & 10.8-10.11 on Macmini6,2) as debugging messy OS X services really requires that. Not so much SpellServer itself (which has multiple bugs that has been deicovered through years & reported to Apple to no avail), more the installation packages pre&postflights, how [pbs](x-man-page://pbs) misbehaves, as we try to deploy user friendly packages.*
 
+
+__Configuring Hunspell__
+
+On recent OSes using LLVM
+```
+CC=llvm-gcc-4.2 CPP=llvm-cpp-4.2 CXX=llvm-g++-4.2 ./configure
+```
+
+On older OSses using GCC
+```
+CC=/usr/bin/gcc-4.2 CPP=/usr/bin/cpp-4.2 CXX=/usr/bin/g++-4.2 ./configure
+```
+
 ---
 
 ###Version history
