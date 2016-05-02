@@ -129,7 +129,7 @@ struct EncodingMapping {
 	return NSMakeRange (0x7fffffff, 0);
 #else
 	// else if 10.6+
-    // NSNotFound depreciated in 10.10.3?
+    // NSNotFound depreciated after 10.10.3?
 #if __LP64__ || NS_BUILD_32_LIKE_64
 	return NSMakeRange (ULONG_MAX, 0);
 #else
