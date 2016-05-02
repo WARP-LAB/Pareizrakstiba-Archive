@@ -125,16 +125,11 @@ struct EncodingMapping {
 	// Thus- compiling Pareizrakstība as 64-bit, will give NSNotFound==LONG_MAX, however apps utilising OSX spell server CAN expect INT_MAX (which is a system bug).
 	// Therefore a warning is rised
 	// Pareizrakstiba[xxxx] Warning - conversion from 64 bit to 32 bit integral value requested within NSPortCoder, but the 64 bit value 9223372036854775807 cannot be represented by a 32 bit value
-	// So just return INT_MAX in all (32 and 64bit) cases for 10.5
-
-//#if __LP64__ || NS_BUILD_32_LIKE_64
-//	return NSMakeRange (ULONG_MAX, 0);
-//#else
-//	return NSMakeRange (UINT_MAX, 0);
-//#endif
+	// So just return INT_MAX in all (32 and 64bit) cases for 10.5?
 	return NSMakeRange (0x7fffffff, 0);
 #else
 	// else if 10.6+
+    // NSNotFound depreciated in 10.10.3?
 #if __LP64__ || NS_BUILD_32_LIKE_64
 	return NSMakeRange (ULONG_MAX, 0);
 #else
@@ -250,7 +245,7 @@ struct EncodingMapping {
 {
     /*
      When user chooses to "Learn Spelling" for a word OSX automatically adds it to user dictionary, located at ~/Library/Spelling/<langid>
-     It works and word isn't spelled any more.
+     It works and word isn't treated as incorrect any more.
      
      When user chooses to "Ignore Spelling" no word is added to user dictionary, the word is kept in "memory" and
      only while document containing the word is loaded.
@@ -269,11 +264,11 @@ struct EncodingMapping {
     /*
      When user chooses to "Unlearn Spelling" for a word OSX does it, using the same user dictionary, located at ~/Library/Spelling/<languageid>
      The way it's done, is adding the word one more time to the dic.
-     It works and word isn't spelled any more.
+     It works and the word is treated as not in user dictionary any more.
      
      However, as user dictionary at ~/Library/Spelling/<languageid> will be used to contribute/submit new words to HunSpell aff&dic developer,
      there's a problem to solve. In the situation described above user would contribute word list with an incorrect word repeated twice, instead of not sending it at all.
-     We have to change this OSX behavior, and on "Unlearn Spelling" actually delete the word from user dic.
+     We have to change this OSX behavior, and on "Unlearn Spelling" actually delete the word from user dic?
      
      BUT - this methods description is incorrect - it's not "didForgetWord", burt "WILL!ForgetWord".
      "Notifies the delegate that the sender has removed the specified word from the user’s list of acceptable words in the specified language."
