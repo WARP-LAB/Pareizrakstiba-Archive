@@ -48,14 +48,16 @@ Notes *(os version :: latest release :: newest Xcode on the platform that has go
 
 __Configuring Hunspell__
 
-On recent OSes using LLVM
+This varies based on LLVM/GCC on your system.
+
+On more recent OSes using LLVM
 ```
 CC=llvm-gcc-4.2 CPP=llvm-cpp-4.2 CXX=llvm-g++-4.2 ./configure
 ```
 
 On older OSses using GCC
 ```
-CC=/usr/bin/gcc-4.2 CPP=/usr/bin/cpp-4.2 CXX=/usr/bin/g++-4.2 ./configure
+CC=gcc-4.2 CPP=cpp-4.2 CXX=g++-4.2 ./configure
 ```
 
 ---
