@@ -50,7 +50,7 @@ __Configuring Hunspell__
 
 This varies based on LLVM/GCC on your system.
 
-On more recent OSes using LLVM
+On recent OSes using LLVM
 ```
 CC=llvm-gcc-4.2 CPP=llvm-cpp-4.2 CXX=llvm-g++-4.2 ./configure
 ```
