@@ -51,7 +51,7 @@ CIRCUMFIX |
 MAXNGRAMSUGS 6
 NOSPLITSUGS
 
-REP 25
+REP 93
 REP ike iek
 REP via vai
 REP lig līg
@@ -77,6 +77,74 @@ REP a ā
 REP u ū
 REP ū u
 REP s š
+REP betarī bet_arī
+REP bettomēr bet_tomēr
+REP ciknecik cik_necik
+REP cikvien cik_vien
+REP diezinka diezin_ka
+REP diezinkā diezin_kā
+REP diezinkam diezin_kam
+REP diezinko diezin_ko
+REP diezinkur diezin_kur
+REP diezkas diez_kas
+REP diezkam diez_kam
+REP diezkā diez_kā
+REP diezko diez_ko
+REP diezkur diez_kur
+REP ganjau gan_jau
+REP ganjaunu gan_jau_nu
+REP gribotnegribot gribot_negribot
+REP itīpaši it_īpaši
+REP itkā it_kā
+REP itsevišķi it_sevišķi
+REP jaarī ja_arī
+REP jaunugan jau_nu_gan
+REP jebvai jeb_vai
+REP kautarī kaut_arī
+REP kautgan kaut_gan
+REP kautkam kaut_kam
+REP kautkas kaut_kas
+REP kautkā kaut_kā
+REP kautko kaut_ko
+REP kautkur kaut_kur
+REP kāarī kā_arī
+REP kākad kā_kad
+REP kārezultātā kā_rezultātā
+REP laiarī lai_arī
+REP laigan lai_gan
+REP līdzarto līdz_ar_to
+REP nenokā ne_no_kā
+REP nereizivien ne_reizi_vien
+REP netikai ne_tikai
+REP netikvien ne_tikvien
+REP nevien ne_vien
+REP nezinkas nezin_kas
+REP nezinkam nezin_kam
+REP nezinkā nezin_kā
+REP nezinko nezin_ko
+REP nezinkur nezin_kur
+REP nezkas nez_kas
+REP nezkam nez_kam
+REP nezkā nez_kā
+REP nezko nez_ko
+REP nezkur nez_kur
+REP pēctamkad pēc_tam_kad
+REP pirmāmkārtām pirmām_kārtām
+REP sazinkas sazin_kas
+REP sazinkam sazin_kam
+REP sazinkā sazin_kā
+REP sazinko sazin_ko
+REP sazinkur sazin_kur
+REP tāka tā_ka
+REP tākā tā_kā
+REP tālabka tālab_ka
+REP tamdēļka tamdēļ_ka
+REP tāpatkā tāpat_kā
+REP tāpēcka tāpēc_ka
+REP tiklīdzkā tiklīdz_kā
+REP tiktikko tik_tikko
+REP vaiarī vai_arī
+REP vainu vai_nu
 
 SFX = Y 1
 SFX = 0 . .
