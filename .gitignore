@@ -30,6 +30,7 @@ xcuserdata/
 
 # build dir
 build/
+build-*/
 obj/
 Debug*/
 Release*/
@@ -43,4 +44,3 @@ Release*/
 *.service/
 
 # allow some flat files for this project i.e. ico
-
