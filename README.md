@@ -1,4 +1,4 @@
-# THIS IS ACHIVED REPO
+# THIS IS ARCHIVED REPO
 
 **[See updated Pareizrakstiba here](https://github.com/WARP-LAB/Pareizrakstiba)**
 
