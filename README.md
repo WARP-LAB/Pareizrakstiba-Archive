@@ -52,6 +52,13 @@ This is for OS X 10.7+. Source of the old releases for 10.4-10.6, PPC, UB, Intel
 
 ## Version history
 
+#### 4.0
+
+* 2018-01-19
+* A version for Mac OS X 10.13 (64-bit) created.
+* Beta as it is not code signed.
+* Using Latvian affix table v.1.3.0 (16.09.2016.).
+
 #### 3.2
 
 * 2015-07-02
